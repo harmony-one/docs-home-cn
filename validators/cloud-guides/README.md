@@ -12,5 +12,3 @@ description: How to setup & connect to your cloud instance
 
 {% page-ref page="digital-ocean.md" %}
 
-
-

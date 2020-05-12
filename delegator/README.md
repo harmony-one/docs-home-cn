@@ -6,7 +6,3 @@ The earned block rewards are stored in a separate reward balance of the delegato
 
 Your delegated tokens are also associated with slashing risks of the validator. As a delegator, you should carefully choose validators based on their historical performance metrics such as APR, uptime and commission. In case of indifference or indecisiveness, you should distribute your delegations among multiple validators in order to minimize risk.
 
-
-
-
-

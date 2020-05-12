@@ -12,40 +12,40 @@ If you are new to setting up Validators, start [here](validator-cheat-sheet.md).
 ssh -i [KEY].pem [SSH ADDRESS]
 ```
 
-![AWS Connect Example](../.gitbook/assets/image%20%2817%29.png)
+![AWS Connect Example](../.gitbook/assets/image-17.png)
 
-2. Install `tmux`, if your Linux distribution does not come with it.
+1. Install `tmux`, if your Linux distribution does not come with it.
 
 ```bash
 sudo yum install tmux
 ```
 
-3. Download the Harmony CLI.
+1. Download the Harmony CLI.
 
 ```bash
 curl -LO https://harmony.one/hmycli && mv hmycli hmy && chmod +x hmy
 ```
 
-4. Create a BLS Key.
+1. Create a BLS Key.
 
 ```text
 ./hmy keys generate-bls-key --passphrase
 ```
 
-5. Download `node.sh`.
+1. Download `node.sh`.
 
 ```bash
 curl -LO https://raw.githubusercontent.com/harmony-one/harmony/master/scripts/node.sh \
 && chmod a+x node.sh
 ```
 
-6. Start a new `tmux` session called `node`.
+1. Start a new `tmux` session called `node`.
 
 ```bash
 tmux new-session -s node
 ```
 
-7. Run the node.
+1. Run the node.
 
 {% tabs %}
 {% tab title="Open Staking Network" %}
@@ -55,21 +55,20 @@ tmux new-session -s node
 {% endtab %}
 {% endtabs %}
 
-8. Detach from the tmux session by pressing CTRL and B at the same time, then press D.
-
-9. Check that your node is syncing \(block height &gt; 0\).
+1. Detach from the tmux session by pressing CTRL and B at the same time, then press D.
+2. Check that your node is syncing \(block height &gt; 0\).
 
 ```bash
 ./hmy blockchain latest-header
 ```
 
-10. Create a new wallet.
+1. Create a new wallet.
 
 ```bash
 ./hmy keys add [ACCOUNT NAME] --passphrase
 ```
 
-11. Get tokens for your validator
+1. Get tokens for your validator
 
 {% tabs %}
 {% tab title="Open Staking Testnet" %}
@@ -79,7 +78,7 @@ curl -X GET https://faucet.os.hmny.io/fund?address=[ONE ADDRESS]
 {% endtab %}
 {% endtabs %}
 
-12. Create your Validator
+1. Create your Validator
 
 {% tabs %}
 {% tab title="Open Staking Testnet" %}
@@ -95,7 +94,7 @@ curl -X GET https://faucet.os.hmny.io/fund?address=[ONE ADDRESS]
 {% endtab %}
 {% endtabs %}
 
-13. Check that your ONE address exists as a validator
+1. Check that your ONE address exists as a validator
 
 {% tabs %}
 {% tab title="Open Staking Testnet" %}
@@ -105,7 +104,7 @@ curl -X GET https://faucet.os.hmny.io/fund?address=[ONE ADDRESS]
 {% endtab %}
 {% endtabs %}
 
-14. Collect rewards.
+1. Collect rewards.
 
 {% tabs %}
 {% tab title="Open Staking Testnet" %}
@@ -115,7 +114,7 @@ curl -X GET https://faucet.os.hmny.io/fund?address=[ONE ADDRESS]
 {% endtab %}
 {% endtabs %}
 
-15. Check validator information for active flag / availability \(block signed\) / etc ...
+1. Check validator information for active flag / availability \(block signed\) / etc ...
 
 {% tabs %}
 {% tab title="Open Staking Testnet" %}
@@ -124,6 +123,4 @@ curl -X GET https://faucet.os.hmny.io/fund?address=[ONE ADDRESS]
 ```
 {% endtab %}
 {% endtabs %}
-
-
 

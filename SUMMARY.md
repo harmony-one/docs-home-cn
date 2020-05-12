@@ -1,8 +1,8 @@
 # Table of contents
 
 * [Introduction](README.md)
-* [Wallets](wallets/README.md)
-  * [Harmony Wallet \(Harmony Browser Extension\)](wallets/chrome-extension.md)
+* [Wallets钱包](wallets/README.md)
+  * [Harmony Wallet \(Harmony Browser Extension\) Harmony谷歌插件钱包](wallets/chrome-extension.md)
   * [Trust Wallet](wallets/trustwallet.md)
   * [Ledger](wallets/ledger/README.md)
     * [Download & Setup](wallets/ledger/download-and-setup.md)

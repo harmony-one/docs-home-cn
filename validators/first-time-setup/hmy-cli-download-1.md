@@ -28,7 +28,7 @@ For the MacOS version, use `./hmy.sh` instead of `./hmy` for all commands.
 
 ### Check the downloaded binary:
 
-Run `./hmy cookbook`to see some commonly used commands. 
+Run `./hmy cookbook`to see some commonly used commands.
 
 ```bash
 ./hmy --node="https://api.s0.os.hmny.io" cookbook

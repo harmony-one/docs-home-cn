@@ -4,7 +4,7 @@
 See [https://harmony.one/status](https://harmony.one/status%20%20) for the current network status and endpoints.
 {% endhint %}
 
-#### Network Overview
+## Network Overview
 
 Harmony runs not only a production mainnet but also several other testnets.
 
@@ -15,7 +15,7 @@ Harmony runs not only a production mainnet but also several other testnets.
 | Open Staking Testnet | Validators | Open Staking Testing and [StakeHeist](https://medium.com/harmony-one/coming-soon-on-pangaea-stake-heist-23bd201d08a7) |
 | Partner Testnet | Partners | Staking Partners building for Open Staking |
 
-#### Outages 
+## Outages
 
 Information about outages and postmortems on those outages can be found [here](outages/).
 

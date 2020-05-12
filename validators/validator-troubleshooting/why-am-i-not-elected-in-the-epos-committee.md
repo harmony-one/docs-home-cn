@@ -33,15 +33,13 @@ Non election in the EPOS committee are caused by two main issues :
 ```bash
  ./hmy --node="https://api.s0.os.hmny.io" blockchain median-stake | grep median
     "epos-median-stake": "1550000000000000000000000.000000000000000000",
-
 ```
 {% endtab %}
 
 {% tab title="Staking Explorer" %}
-go to : [https://staking.harmony.one/validators](https://staking.harmony.one/validators)  
+go to : [https://staking.harmony.one/validators](https://staking.harmony.one/validators)
 
-
-![https://staking.harmony.one/validators](../../.gitbook/assets/image%20%28124%29.png)
+![https://staking.harmony.one/validators](../../.gitbook/assets/image-124.png)
 {% endtab %}
 {% endtabs %}
 
@@ -51,7 +49,7 @@ the CLI returned a value in wei, it can be converted online converter like [http
 
 #### Total delegation is above the median stake
 
-Visit [https://staking.harmony.one/validators/](https://staking.harmony.one/validators/)&lt;youroneaccount&gt; 
+Visit [https://staking.harmony.one/validators/](https://staking.harmony.one/validators/)&lt;youroneaccount&gt;
 
 Example : [https://staking.harmony.one/validators/one1u6c4wer2dkm767hmjeehnwu6tqqur62gx9vqsd](https://staking.harmony.one/validators/one1u6c4wer2dkm767hmjeehnwu6tqqur62gx9vqsd)
 
@@ -59,7 +57,7 @@ Example : [https://staking.harmony.one/validators/one1u6c4wer2dkm767hmjeehnwu6tq
 
 Your current total stake has to be among the 320 \(in P3 or mainnet, 200 for OSTN\) highest stake before the change of next epoch. For that, one way to make sure of it is to be near / above the median stake.
 
-Being just above the last bidder would ensure your a place but it is risky as you might be outbid during the next election. 
+Being just above the last bidder would ensure your a place but it is risky as you might be outbid during the next election.
 
 If you are not above the median stake then time to ask for more delegation or delegate yourself more ONE token following this doc on [how to delegate more ONE token](https://docs.harmony.one/validators/validator/managing-your-validator/delegating-to-a-validator)
 
@@ -69,15 +67,15 @@ Make sure your max-total-delegation is high enough and above the median stake so
 
 #### **Your validator node** epos-eligibility-status **flag needs to be active**
 
-Issue the command   
+Issue the command  
 ./hmy -n [https://api.s0.os.hmny.io](https://api.s0.os.hmny.io) blockchain validator information \[VALIDATOR-ACCOUNT\] \| grep epos-status
 
 ```bash
 ./hmy --node="https://api.s0.os.hmny.io" blockchain validator information  one1u6c4wer2dkm767hmjeehnwu6tqqur62gx9vqsd | grep epos-status
-    "epos-status": "currently elected",      
+    "epos-status": "currently elected",
 ```
 
-If **not eligible**, update it to active via the command   
+If **not eligible**, update it to active via the command  
 ./hmy -n [https://api.s0.os.hmny.io](https://api.s0.os.hmny.io) staking edit-validator --validator-addr &lt;ONE\_VALIDATOR\_ACCOUNT&gt; --active true --passphrase
 
 {% tabs %}
@@ -124,10 +122,9 @@ and search for :
         "num-beacon-blocks-until-next-epoch": 28
       }
     },
-
 ```
 
-For your validator to stay elected, you wanna make sure the current-epoch-signing-percentage is above 66% \(0.66\). 
+For your validator to stay elected, you wanna make sure the current-epoch-signing-percentage is above 66% \(0.66\).
 
 To fix the above, we have to make sure the node is working correctly and below are few pointers
 
@@ -142,7 +139,7 @@ Compare your block height
 ```
 
 {% hint style="danger" %}
-If the above doesn’t work and you have an error message similar to this: _commit: v304-0e26945, error: dial tcp4 127.0.0.1:9500: connect: connection refused_   
+If the above doesn’t work and you have an error message similar to this: _commit: v304-0e26945, error: dial tcp4 127.0.0.1:9500: connect: connection refused_  
 It means the harmony node binary is not running. Please follow this documentation on [how to run the node](https://docs.harmony.one/validators/validator/first-time-setup/download-node-script).
 {% endhint %}
 
@@ -151,13 +148,13 @@ and the network block height
 {% tabs %}
 {% tab title="Open Staking Network" %}
 ```bash
-./hmy --node="https://api.s0.os.hmny.io" blockchain latest-headers | grep blockNumber 
+./hmy --node="https://api.s0.os.hmny.io" blockchain latest-headers | grep blockNumber
 ```
 {% endtab %}
 
 {% tab title="Partner Testnet" %}
 ```bash
-./hmy --node="https://api.s0.ps.hmny.io" blockchain latest-headers | grep blockNumber 
+./hmy --node="https://api.s0.ps.hmny.io" blockchain latest-headers | grep blockNumber
 ```
 {% endtab %}
 {% endtabs %}

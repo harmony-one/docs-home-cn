@@ -26,7 +26,7 @@ As a validator, for un-delegating from your own validator, `delegator-addr` and 
 
 ## When will I get my tokens back after un-delegating?
 
-When you decide to un-delegate your tokens from a validator on the Open Staking Testnet, your tokens will be subjected to a cool-down period lasting **7 epochs \(~70 minutes\)**. You will receive your tokens back in your account balance on the 8th epoch after an un-delegation transaction. 
+When you decide to un-delegate your tokens from a validator on the Open Staking Testnet, your tokens will be subjected to a cool-down period lasting **7 epochs \(~70 minutes\)**. You will receive your tokens back in your account balance on the 8th epoch after an un-delegation transaction.
 
 This means that you **will NOT have access to these tokens and can NOT transfer them for up to 80 minutes** after choosing to un-delegate your tokens from a validator.
 

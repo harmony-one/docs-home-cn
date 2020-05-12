@@ -16,7 +16,7 @@ description: >-
 ### **Step 2:** [SSH](https://docs.harmony.one/home/validators/first-time-setup/cloud-guides/aws#step-2-connecting-to-your-aws-instance) into the machine.
 
 {% hint style="warning" %}
-AutoNode **DOES NOT** run with root, thus you need to login with a user that is not root. 
+AutoNode **DOES NOT** run with root, thus you need to login with a user that is not root.
 
 **Most cloud providers \(like AWS\) give you such an account as the default login.** However, if you don't have a user that is not root, follow the procedures below to create one, otherwise you can just skip this part and go to Step 3.
 {% endhint %}
@@ -36,7 +36,7 @@ su - <your username>
 ```
 
 {% hint style="warning" %}
-If you wish to automatically reset your node during hard resets \(the `--auto-reset` option in step 7\) your user \(`<your username>`\)  must have sudo access without a passphrase. Follow instructions [here](https://www.cyberciti.biz/faq/linux-unix-running-sudo-command-without-a-password/) to set that up. 
+If you wish to automatically reset your node during hard resets \(the `--auto-reset` option in step 7\) your user \(`<your username>`\) must have sudo access without a passphrase. Follow instructions [here](https://www.cyberciti.biz/faq/linux-unix-running-sudo-command-without-a-password/) to set that up.
 
 If you don't want to do that, you can still run AutoNode! Only thing is that on hard resets, you have to do is step 6 and 7 to restart your node.
 {% endhint %}
@@ -61,26 +61,26 @@ If you are upgrading your AutoNode from a previous version the installer might a
 {% endtab %}
 
 {% tab title="Import Keystore File" %}
-```
+```text
 ./hmy keys import-ks <path-to-keystore-file>
 ```
 {% endtab %}
 
 {% tab title="Import Private Key \(not recommended\)" %}
-```
+```text
 ./hmy keys import-private-key <private-key-string>
 ```
 {% endtab %}
 {% endtabs %}
 
-### **Step 5:** Edit the configuration file and change the `validator-addr`to the ONE address created on Step 4. 
+### **Step 5:** Edit the configuration file and change the `validator-addr`to the ONE address created on Step 4.
 
 ```text
 ./auto_node.sh edit-config
 ```
 
 > Note that `identity` must be unique or else your validator won't get created.
-
+>
 > Save and exit the configuration by pressing **Ctrl + X** then **Y**, then by hitting **enter**.
 
 {% hint style="warning" %}
@@ -95,7 +95,7 @@ Note that the ONE address has to be in quotes
 ./auto_node.sh run --auto-active --auto-reset --clean
 ```
 
-> Answer the prompts with `Y` or `N` \(this process may take a minute\).   
+> Answer the prompts with `Y` or `N` \(this process may take a minute\).  
 > Feel free to exit with **Ctrl+Z** after your node syncs!
 
 {% hint style="info" %}
@@ -105,7 +105,7 @@ You can view all the commands for AutoNode with `~/auto_node.sh -h`
 ## **Monitoring**
 
 {% hint style="success" %}
-If any of the commands activates a monitoring screen,  you can always exit using **Ctrl**+**Z**.
+If any of the commands activates a monitoring screen, you can always exit using **Ctrl**+**Z**.
 {% endhint %}
 
 ### **1\) View the log of your Harmony Monitor:**
@@ -120,7 +120,7 @@ If any of the commands activates a monitoring screen,  you can always exit using
 ./auto_node.sh tui run
 ```
 
-![](../.gitbook/assets/image%20%2876%29.png)
+![](../.gitbook/assets/image-76.png)
 
 ### 3\) View the status of your Harmony Monitor daemon:
 

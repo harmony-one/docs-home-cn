@@ -1,24 +1,24 @@
 # Validator Security
 
-This section will teach you about improving the security of your validator. As a validator you play a crucial role in securing and decentralizing the Harmony network. The security of the network is compounded as a sum of all validator's security. Therefore is very important that every single piece in the chain is as secure as possible. 
+This section will teach you about improving the security of your validator. As a validator you play a crucial role in securing and decentralizing the Harmony network. The security of the network is compounded as a sum of all validator's security. Therefore is very important that every single piece in the chain is as secure as possible.
 
-Depending on your configuration, if you have the BLS key on your validator server and maybe also the password to decrypt it, for example in order to restart your node automatically, it is strongly recommended that you secure the access to your validator as much as possible. 
+Depending on your configuration, if you have the BLS key on your validator server and maybe also the password to decrypt it, for example in order to restart your node automatically, it is strongly recommended that you secure the access to your validator as much as possible.
 
-Using 2FA and other security measures can substantially improve the overall security of your validator. The state of the art for 2FA is to use a HSM module like YubiKey. 
+Using 2FA and other security measures can substantially improve the overall security of your validator. The state of the art for 2FA is to use a HSM module like YubiKey.
 
 **Very important:** it is highly recommended to have two YubiKeys associated to ensure one is not locked out in case a YubiKey is lost, stolen, or breaks.
 
-In case you find YubiKey an expensive solution, other methods for 2FA can be used, like your phone or authenticator apps for example. 
+In case you find YubiKey an expensive solution, other methods for 2FA can be used, like your phone or authenticator apps for example.
 
 **Very important:** Be aware that SMS based 2FA authentication methods are not secure and not recommended as one could hijack your smartphone’s SIM. Doing this hackers can redirect any two-factor notifications to their own devices.
 
-### **What are and why use HSM modules?**
+## **What are and why use HSM modules?**
 
 Hardware Security Modules \(HSMs\) generate, manage and store the secure cryptographic keys that are required for authenticating an user or device in a broader network. Malware attacks and remote extraction of private keys are much more difficult when a HSM module is configured properly. When you have your private key on your validator that is secured only by a password, an attacker can simply copy your private key and sign malicious transactions or generate double signs which can result for example in stake slashing or other unwanted operations on your node. By using Two-Factor Authenticator \(2FA\) and HSM module, you are strengthening the authentication on your Virtual Private Server \(VPS\). There are many options for 2FA but is recommended that you actually use a HSM module like YubiKey for this. Even better would be to use certificate in combination with a HSM module in order to authenticate and disable password login.
 
-### **How can I secure the access to my VPS better?**
+## **How can I secure the access to my VPS better?**
 
-#### **1.** Add Two-factor Authenticator to your VPS provider if it is allowed.
+### **1.** Add Two-factor Authenticator to your VPS provider if it is allowed.
 
 Serious VPS providers allow this already and also to use a HSM module like YubiKey. This guide focuses on Vultr but the documentation for YubiKey activation can be found in the documentation of different VPS providers, e.g. Hetzner: [https://wiki.hetzner.de/index.php/KonsoleH:Zwei-Faktor-Authentifizierung/en](https://wiki.hetzner.de/index.php/KonsoleH:Zwei-Faktor-Authentifizierung/en)
 
@@ -34,25 +34,25 @@ In the next page, you will need to repeat the previous step to re-enter a second
 
 When you are finished, log out of your Vultr account. Then attempt to log back in. You will be asked to enter an authentication code. Insert the YubiKey device in one of your computer’s USB ports, and either press the button\(s\) or touch the edge of the device.
 
-#### **2. Create a SSH Public-Private Key pair for your VPS and assign the Public Key to the VPS when creating it.**
+### **2. Create a SSH Public-Private Key pair for your VPS and assign the Public Key to the VPS when creating it.**
 
 On Windows you can use for example PuttyGen to generate your SSH Public-Private Key pair. Setting a passphrase is advisable as it offers another layer of security if your ssh keys will be compromised.
 
 Popular algorithms for creating SSH Keys:
 
-**RSA:** It depends on key size. It is recommend to have 3072 or even better 4096-bit length. The 1024-bit length is considered unsafe. 
+**RSA:** It depends on key size. It is recommend to have 3072 or even better 4096-bit length. The 1024-bit length is considered unsafe.
 
 **Ed25519:** It’s the most recommended public-key algorithm available today but you have to check with the cloud provider, e.g. Vultr, Hetzner, AWS if is supporting this.
 
-To generate the SSH keys on macOS use the Terminal and the command below. 
+To generate the SSH keys on macOS use the Terminal and the command below.
 
 ```text
 ssh-keygen -t rsa
 ```
 
-#### **3. Use SSH Private Key and not password to authenticate on your VPS**
+### **3. Use SSH Private Key and not password to authenticate on your VPS**
 
-#### **4.** If you received any root password after creating your VPS, change it
+### **4.** If you received any root password after creating your VPS, change it
 
 ```text
 passwd
@@ -62,9 +62,9 @@ Make sure to **back-up this password** and also be aware where you place it so t
 
 **Very important:** For holding passwords, keywords, etc. an encrypted hardware device and paper wallets are recommended. It is not recommended to hold passwords or keywords on a hot storage like your personal computer or notebook.
 
-#### 5. Once logged in, update your OS
+### 5. Once logged in, update your OS
 
-For Debian based systems like Ubuntu or Debian use the command bellow: 
+For Debian based systems like Ubuntu or Debian use the command bellow:
 
 ```text
 sudo apt-get update && sudo apt-get upgrade
@@ -76,7 +76,7 @@ For Amazon Linux use the command bellow:
 sudo yum update
 ```
 
-#### 6. Create a separate user than root for your application
+### 6. Create a separate user than root for your application
 
 It is not recommended to use directly the root user on your VPS. Therefore create a new user:
 
@@ -96,7 +96,7 @@ You can switch to the new user with the following command:
 sudo -u <your-username> -i
 ```
 
-#### **7. Create the necessary setup so that the new created user can login using certificate**
+### **7. Create the necessary setup so that the new created user can login using certificate**
 
 ```text
 sudo mkdir -p "/home/<your-username>/.ssh"
@@ -113,7 +113,7 @@ sudo chown "<your-username>:<your-username>" "/home/<your-username>/.ssh/authori
 sudo chmod 0600 "/home/<your-username>/.ssh/authorized_keys"
 ```
 
-#### **8. Setup Yubikey 2FA on Debian based systems like Ubuntu and strengthen the general authentication**
+### **8. Setup Yubikey 2FA on Debian based systems like Ubuntu and strengthen the general authentication**
 
 First add the PPA and install the library.
 
@@ -145,7 +145,7 @@ To improve the security you should comment the following line out:
 @include common-auth
 ```
 
-This way the YubiKey is required to authenticate without a possibility to fall back to providing the password. 
+This way the YubiKey is required to authenticate without a possibility to fall back to providing the password.
 
 Result:
 
@@ -165,7 +165,7 @@ Add the mappings for each user:
 
 ```text
 <user1:<first 12 characters of yubikey1>:<first 12 characters of yubikey2>
-<user2>:<first 12 characters of yubikey1> 
+<user2>:<first 12 characters of yubikey1>
 ```
 
 Save the file and exit -&gt; press Ctrl+X and then press “y”
@@ -178,7 +178,7 @@ sudo nano /etc/ssh/sshd_config
 
 Following changes need to be made:
 
-* Enable challenge response authentication by changing it to “yes” ****
+* Enable challenge response authentication by changing it to “yes” _\*\*_
 
   _ChallengeResponseAuthentication yes_
 
@@ -189,17 +189,17 @@ Following changes need to be made:
 * UsePAM yes
 * Disable the password authentication by removing “\#” in front of this line:
 
-  _PasswordAuthentication_ and set the value from _yes_ to _no_ 
+  _PasswordAuthentication_ and set the value from _yes_ to _no_
 
-* Disable root authentication - if you have created a separate user for your application, deployments, etc. you can also disable the SSH root user access, which will add an extra layer of security to your VPS. ****Find the line _PermitRootLogin_, remove the comment sign “\#” from the beginning of it and set the value to _no_
-* Change your SSH port from 22 to another one, for example 2225. ****
+* Disable root authentication - if you have created a separate user for your application, deployments, etc. you can also disable the SSH root user access, which will add an extra layer of security to your VPS. _\*\*_Find the line _PermitRootLogin_, remove the comment sign “\#” from the beginning of it and set the value to _no_
+* Change your SSH port from 22 to another one, for example 2225. _\*\*_
 
-  Don’t use any of the ports in this list: [https://en.wikipedia.org/wiki/List\_of\_TCP\_and\_UDP\_port\_numbers](https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers) , as they are already being used. ****  
+  Don’t use any of the ports in this list: [https://en.wikipedia.org/wiki/List\_of\_TCP\_and\_UDP\_port\_numbers](https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers) , as they are already being used. _\*\*_
 
 Example sshd\_config file - **take it only as reference to see the security changes and don't copy it!**
 
 ```text
-#	$OpenBSD: sshd_config,v 1.101 2017/03/14 07:19:07 djm Exp $
+#    $OpenBSD: sshd_config,v 1.101 2017/03/14 07:19:07 djm Exp $
 
 # This is the sshd server system-wide configuration file.  See
 # sshd_config(5) for more information.
@@ -240,7 +240,7 @@ PermitRootLogin no
 #PubkeyAuthentication yes
 
 # Expect .ssh/authorized_keys2 to be disregarded by default in future.
-#AuthorizedKeysFile	.ssh/authorized_keys .ssh/authorized_keys2
+#AuthorizedKeysFile    .ssh/authorized_keys .ssh/authorized_keys2
 
 #AuthorizedPrincipalsFile none
 
@@ -315,14 +315,14 @@ PrintMotd no
 AcceptEnv LANG LC_*
 
 # override default of no subsystems
-Subsystem	sftp	/usr/lib/openssh/sftp-server
+Subsystem    sftp    /usr/lib/openssh/sftp-server
 
 # Example of overriding settings on a per-user basis
 #Match User anoncvs
-#	X11Forwarding no
-#	AllowTcpForwarding no
-#	PermitTTY no
-#	ForceCommand cvs server
+#    X11Forwarding no
+#    AllowTcpForwarding no
+#    PermitTTY no
+#    ForceCommand cvs server
 ```
 
 Save the file and exit -&gt; press Ctrl+X and then press “y”
@@ -388,11 +388,11 @@ sudo systemctl restart fail2ban
 ```
 
 **10. Configure system firewall with IPtables**  
-More about it can be found here: [https://www.tecmint.com/linux-iptables-firewall-rules-examples-commands/](https://www.tecmint.com/linux-iptables-firewall-rules-examples-commands/)  
-  
+More about it can be found here: [https://www.tecmint.com/linux-iptables-firewall-rules-examples-commands/](https://www.tecmint.com/linux-iptables-firewall-rules-examples-commands/)
+
 **11. Monitor and manage your system and process by using htop**
 
- ****Install htop
+_\*\*_Install htop
 
 ```text
 sudo apt-get install htop

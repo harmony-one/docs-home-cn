@@ -9,9 +9,9 @@ description: Text based user interface for Harmony node.
 Text based user interface for Harmony node.  
 Below information is currently displayed on Harmony-TUI
 
-1. **Section - Harmony Blockchain** - _\*\*_Connected peers - Leader's one address - Current epoch number - Recent timestamps of various stages
-2. **Section - Harmony Node** - _\*\*_Harmony node binary version - ShardId of local node - Balance of user's one account
-3. **Section - Current Block** - _\*\*_Current block number - Size of current block in bytes - Hash of current block - StateRoot - BlockEpoch - Number of signers who signed last block
+1. **Section - Harmony Blockchain** - \_\*\*\_Connected peers - Leader's one address - Current epoch number - Recent timestamps of various stages
+2. **Section - Harmony Node** - \_\*\*\_Harmony node binary version - ShardId of local node - Balance of user's one account
+3. **Section - Current Block** - \_\*\*\_Current block number - Size of current block in bytes - Hash of current block - StateRoot - BlockEpoch - Number of signers who signed last block
 4. **Section - System Stats** - CPU usage in percentage - Memory/RAM usage of system - Used disk space
 5. **Section - Validator Logs** This section shows validator log file
 

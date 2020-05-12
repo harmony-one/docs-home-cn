@@ -2,8 +2,8 @@
 
 ## New Wallet \(CLI\) <a id="new-local-account-creation"></a>
 
-You need to provide a local account name of your choice and provide a passphrase. _\*\*_When creating an account, the CLI will ask you to provide a passphrase to encrypt the keystore file :  
-**./hmy keys add \[LOCAL ACCOUNT NAME\] --passphrase**  example : 
+You need to provide a local account name of your choice and provide a passphrase. \_\*\*\_When creating an account, the CLI will ask you to provide a passphrase to encrypt the keystore file :  
+**./hmy keys add \[LOCAL ACCOUNT NAME\] --passphrase** example :
 
 ```text
 ./hmy keys add mylocalaccountname --passphrase

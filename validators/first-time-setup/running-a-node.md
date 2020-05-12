@@ -15,7 +15,7 @@ curl -LO https://raw.githubusercontent.com/harmony-one/harmony/master/scripts/no
 
 ## TMUX
 
-Install tmux if your Linux distribution does not already come with it. 
+Install tmux if your Linux distribution does not already come with it.
 
 {% tabs %}
 {% tab title="Ubuntu LTS" %}
@@ -93,9 +93,9 @@ Only use `-c` for our testing networks. Do not use for Mainnet.
 Harmony relies on a beacon shard chain \(aka shard 0\) to facilitate cross shard transaction. For the node to be fully working both your non shard 0 and shard 0 needs to be fully synced
 {% endhint %}
 
-**5.** Confirm that you are fully synced before continuing. Issue  the command in the format **./hmy --node= "\[SHARD\_RPC\_ENDPOINT\]" blockchain latest-headers**,  where  
-SHARD\_RCP\_ENDPOINT would be having that format : api.s\[Shard \#\].\[NETWORK\].hmny.io   
-ex :  
+**5.** Confirm that you are fully synced before continuing. Issue the command in the format **./hmy --node= "\[SHARD\_RPC\_ENDPOINT\]" blockchain latest-headers**, where  
+SHARD\_RCP\_ENDPOINT would be having that format : api.s\[Shard \#\].\[NETWORK\].hmny.io  
+ex :
 
 {% tabs %}
 {% tab title="Open Staking Network S0" %}
@@ -115,7 +115,7 @@ ex :
 
 ## Multiple BLS Keys \(Optional and recommended for advanced users\)
 
-Optionally, you can run the node using multiple BLS keys if you want. 
+Optionally, you can run the node using multiple BLS keys if you want.
 
 **1.** Keys are loaded from `.hmy/blskeys` folder which has to be created first:
 

@@ -7,5 +7,3 @@
 * Rewards Overview \(External Nodes\)
   * [External Nodes Reward Rate - 1 hour](https://harmony.one/1h)
 
-
-

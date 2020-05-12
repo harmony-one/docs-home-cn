@@ -10,7 +10,7 @@ Check chain block height with `./hmy blockchain latest-header --node=[endpoint]`
 
 ## Getting ONE Tokens \(for P3 Faucet is not working\) <a id="getting-one-tokens"></a>
 
-In order to continue and create your validator, you will need to have ONE tokens in your **Shard 0** balance. To get tokens from our Faucet smart contract, use the following format command : **curl** [**https://faucet.\[NETWORK\].hmny.io/fund?address=\[ONE**](https://faucet.os.hmny.io/fund?address=[ONE) **ADDRESS\]**, ex : 
+In order to continue and create your validator, you will need to have ONE tokens in your **Shard 0** balance. To get tokens from our Faucet smart contract, use the following format command : **curl** \[[https://faucet.\[NETWORK\].hmny.io/fund?address=\[ONE](https://faucet.[NETWORK].hmny.io/fund?address=[ONE)\]\([https://faucet.os.hmny.io/fund?address=\[ONE](https://faucet.os.hmny.io/fund?address=[ONE)\) **ADDRESS\]**, ex :
 
 {% tabs %}
 {% tab title="Open Staking Testnet" %}
@@ -104,8 +104,8 @@ If you don't want to participate in the election anymore, you can turn your vali
 
 ## Checking Validator Information <a id="checking-validator-information"></a>
 
-Use the format command **./hmy --node="**[**https://api.s0.os.hmny.io**](https://api.s0.os.hmny.io)**" blockchain validator information \[ONE ADDRESS\]** to check your validator informationm   
-example : 
+Use the format command **./hmy --node="**[**https://api.s0.os.hmny.io**](https://api.s0.os.hmny.io)**" blockchain validator information \[ONE ADDRESS\]** to check your validator informationm  
+example :
 
 {% tabs %}
 {% tab title="Open Staking Testnet" %}

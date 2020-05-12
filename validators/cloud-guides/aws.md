@@ -68,7 +68,7 @@ description: 'To launch your AWS instance, follow the steps below.'
 
 **1.** Open a Terminal window on your computer.
 
- **For Mac:** If you can’t find Terminal, use spotlight to search for it. Or go to your "Applications' folder, and it should be inside of “Utilities”.
+**For Mac:** If you can’t find Terminal, use spotlight to search for it. Or go to your "Applications' folder, and it should be inside of “Utilities”.
 
 ![](https://blobs.gitbook.com/assets%2F-M-IDt7HenNiPUXWT_3k%2F-M-SpPev7Rx3tI5_8vit%2F-M-SwDSVomei_wm8RgU8%2Fassets_-LlDqlxK8e45wuh1WH4h_-LlEvL4ccZjjcXwS1WWY_-LlErPyudVu-nb4ZLB4D_assets%252F-LiQYKCcGux_Ib7Gddno%252F-Lj2HFbsGU29d_abCLle%252F-Lj2HGcLt-ekXY8UUO4g%252Fkey-step1.png?alt=media&token=04abdbb4-bec6-4c09-94ae-b9aca707139d)
 
@@ -104,7 +104,7 @@ Congratulations! You should be logged into your new AWS instance!
 
 ## Step 3: Installing Required Packages
 
- ****Run the following command to make sure your instance is properly updated:
+_\*\*_Run the following command to make sure your instance is properly updated:
 
 ```bash
 sudo yum update

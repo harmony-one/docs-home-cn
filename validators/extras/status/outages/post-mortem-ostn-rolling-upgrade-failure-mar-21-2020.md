@@ -1,28 +1,27 @@
 # Post-Mortem: OSTN Rolling Upgrade failure Mar 21, 2020
 
-### Summary <a id="summary"></a>
+## Summary <a id="summary"></a>
 
-‌On March 21, 2020 a Open Staking Testnet \(OSTN\) rolling upgrade commenced around 11:40 a.m. During the upgrade consensus was lost on Shard 0 due to a pre-existing nil pointer issue which was triggered by a view change. 
+‌On March 21, 2020 a Open Staking Testnet \(OSTN\) rolling upgrade commenced around 11:40 a.m. During the upgrade consensus was lost on Shard 0 due to a pre-existing nil pointer issue which was triggered by a view change.
 
 This caused \(or was compounded by\) an inability of nodes to synch to the highest block \(17080\) due to the fact that 4 out of the 5 nodes which for DNS entry api.s0.os.hmny.io were at a lower height \(17061\).
 
 An attempt was made to bring all the DNS nodes to the same height, however the lower \(17061\) block height was chosen rather than the highest height 17080. This left shard 0 unable to recover and a hard refresh was required.
 
-RJ, quickly investigated and resolved the cause of the underlying view chain. Leo then applied this change as well as all other changes in master to the t3 branch and a rolling upgrade began at around 15:00 which completed at approximately 16:00 p.m.  
+RJ, quickly investigated and resolved the cause of the underlying view chain. Leo then applied this change as well as all other changes in master to the t3 branch and a rolling upgrade began at around 15:00 which completed at approximately 16:00 p.m.
 
-
-### Customer Impact <a id="customer-impact"></a>
+## Customer Impact <a id="customer-impact"></a>
 
 ‌All OSTN validators \(primarily the p-ops team and harmony\) were unable to use OSTN for approximately 3 hours. Also a rolling upgrade became a hard refresh which requires all validators to reset their nodes. At this point in the OSTN lifecycle hard refreshes are a common occurrence and so the validators are prepared for this.
 
-### People Involved <a id="people-involved"></a>
+## People Involved <a id="people-involved"></a>
 
 * John \(john@harmony.one\)
 * Daniel \(daniel@harmony.one\)
 * Leo \(leo@harmony.one\)
 * RJ \(rongjian@harmony.one\)
 
-### Timeline <a id="timeline"></a>
+## Timeline <a id="timeline"></a>
 
 ‌
 
@@ -49,7 +48,7 @@ RJ, quickly investigated and resolved the cause of the underlying view chain. Le
 * **15:46 - John - Announced Upgrade was complete**
 * 16:05 - John Confirmed all 4 Sentries were registered and Earning
 
-### Root Cause Analysis <a id="root-cause-analysis"></a>
+## Root Cause Analysis <a id="root-cause-analysis"></a>
 
 The view change failed due to a nil pointer issue which was caused by logging on consensus which did not have the required context. See [here](https://github.com/harmony-one/harmony/commit/6ff740ed647d81e9a8e677a26ffad0cfa7873b76) for the fix.
 
@@ -57,8 +56,7 @@ The view change failed due to a nil pointer issue which was caused by logging on
 
 Synching all goes of the DNS entry for the shard, in this case api.s0.os.hmny.io
 
-This DNS entry is supported by 5 nodes. In this case four of the nodes were at block height 17061 and one was at block height 17080. This meant that no nodes could sync to the latest block \(17080\).   
-****
+This DNS entry is supported by 5 nodes. In this case four of the nodes were at block height 17061 and one was at block height 17080. This meant that no nodes could sync to the latest block \(17080\).
 
 **3. Why were only five nodes at the latest block height \(17080\)?**
 
@@ -68,15 +66,13 @@ All nodes were at 17080, with the last 19 blocks in memory the nil pointer issue
 
 **4. Why did the remediation steps fail to solve the problem?**
 
-Reverting to a lower block height \(17061\) rather than the latest \(17080\) left us unable to reach consensus and move forward. Lower block has no required cross-link data to advance the consensus as other shards not impacted had assumed the cross-link to be working.  
-****
+Reverting to a lower block height \(17061\) rather than the latest \(17080\) left us unable to reach consensus and move forward. Lower block has no required cross-link data to advance the consensus as other shards not impacted had assumed the cross-link to be working.
 
 **5. Why did we not immediately do a hard refresh when reverting?**
 
-Release processes are evolving as our evaluation of our impact to our customers. It may be worthwhile moving straight to a hard refresh when reverting the code base, as we are currently still doing this with other releases. The other option is for more detailed reversion procedures to be developed including tooling for snapshotting all the db’s before beginning each upgrade as well as tooling for reverting to this state.  
+Release processes are evolving as our evaluation of our impact to our customers. It may be worthwhile moving straight to a hard refresh when reverting the code base, as we are currently still doing this with other releases. The other option is for more detailed reversion procedures to be developed including tooling for snapshotting all the db’s before beginning each upgrade as well as tooling for reverting to this state.
 
-
-### Questions to ask <a id="questions-to-ask"></a>
+## Questions to ask <a id="questions-to-ask"></a>
 
 ‌
 
@@ -96,14 +92,13 @@ Testing of rolling upgrades in STN could have helped prevent the issue in OSTN. 
 
 The issue itself could have been highlighted on STN however it had not gone through an upgrade process and therefore had not triggered a view change. As OSTN is still a testnet for us, we had taken the risk of not imposing too many testing processes before we do a rolling upgrade on OSTN, moving forward we shall test in STN prior to an OSTN release.
 
-### 5 Whys? <a id="5-whys"></a>
+## 5 Whys? <a id="5-whys"></a>
 
 **a. Why did this cause a synching issue?**
 
 Synching all goes of the DNS entry for the shard, in this case api.s0.os.hmny.io
 
-This DNS entry is supported by 5 nodes. In this case four of the nodes were at block height 17061 and one was at block height 17080. This meant that no nodes could sync to the latest block \(17080\).   
-****
+This DNS entry is supported by 5 nodes. In this case four of the nodes were at block height 17061 and one was at block height 17080. This meant that no nodes could sync to the latest block \(17080\).
 
 **b. Why were only five nodes at the latest block height \(17080\)?**
 
@@ -113,15 +108,14 @@ All nodes were at 17080, with the last 19 blocks in memory the nil pointer issue
 
 **c. Why did the remediation steps fail to solve the problem?**
 
-Reverting to a lower block height \(17061\) rather than the latest \(17080\) left us unable to reach consensus and move forward. Lower block has no required cross-link data to advance the consensus as other shards not impacted had assumed the cross-link to be working.  
-****
+Reverting to a lower block height \(17061\) rather than the latest \(17080\) left us unable to reach consensus and move forward. Lower block has no required cross-link data to advance the consensus as other shards not impacted had assumed the cross-link to be working.
 
 **d. Why did we not immediately do a hard refresh when reverting?**
 
 Release processes are evolving as our evaluation of our impact to our customers. It may be worthwhile moving straight to a hard refresh when reverting the code base, as we are currently still doing this with other releases. The other option is for more detailed reversion procedures to be developed including tooling for snapshotting all the db’s before beginning each upgrade as well as tooling for reverting to this state.  
 ‌
 
-### Action Items <a id="action-items"></a>
+## Action Items <a id="action-items"></a>
 
 | Category | Description | Owner | Tracker |
 | :--- | :--- | :--- | :--- |
