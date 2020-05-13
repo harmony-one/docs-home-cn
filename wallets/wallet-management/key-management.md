@@ -1,6 +1,8 @@
-# Private Key Management
+# Private Key Management私钥管理
 
-Below is an index that shows you which wallets can allow to you import or export your account via mnemonic and private key, as well as which wallet has sharded network support.
+Below is an index that shows you which wallets can allow to you import or export your account via mnemonic and private key, as well as which wallet has sharded network support.这张表格展示了各个钱包
 
-![](../../.gitbook/assets/screen-shot-2020-01-22-at-11.22.49-am.png)
+![](../../.gitbook/assets/image%20%284%29.png)
+
+
 

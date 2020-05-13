@@ -4,12 +4,41 @@ description: Harmony's Chrome extension wallet is a secure native crypto wallet
 
 # Harmony Wallet \(Harmony Browser Extension\) Harmony谷歌插件钱包
 
-## Installation下载
+## **Step 1: Install the Harmony Wallet Chrome Extension下载安装Harmony插件钱包**
 
-1. Go to [Harmony.one/chrome-store](https://chrome.google.com/webstore/detail/harmony/bjaeebonnimhcakeckbnemejhdpngdmd) and install extension 从谷歌商店下载Harmony钱包插件，链接：[Harmony.one/chrome-store](https://chrome.google.com/webstore/detail/harmony/bjaeebonnimhcakeckbnemejhdpngdmd)。
-2. Click on the extension icon and create a new ONE address or import an existing address by selecting "Recover account"
+{% hint style="danger" %}
+**请在更新插件之前确认已经保存你的私钥。**
+{% endhint %}
+
+Go to [Harmony.one/chrome-store](https://chrome.google.com/webstore/detail/harmony/bjaeebonnimhcakeckbnemejhdpngdmd) and install extension 从谷歌商店下载安装Harmony钱包插件，链接：[Harmony.one/chrome-store](https://chrome.google.com/webstore/detail/harmony/bjaeebonnimhcakeckbnemejhdpngdmd)。
+
+![](../.gitbook/assets/image%20%283%29.png)
+
+### **Step 2: Create a new address**
+
+Click on the HARMONY H icon on top right and select create a new address.点击右上角的Harmony标志来创建新的地址。
+
+![](https://aws1.discourse-cdn.com/standard11/uploads/harmony1/original/1X/cbca5f6293da91cea68fd91d2cd90c805628f1ac.png)
+
+Choose a name and password for your account and copy the seed phrase somewhere safe as a backup. This is **VERY IMPORTANT** because lost seeds cannot be recovered.设置账户名称和密码，注意保存自己的助记符，Harmony插件钱包不能导出私钥，因此一旦忘记没有办法找回。
+
+![](../.gitbook/assets/image%20%287%29.png)
+
+After you have created a new address you can click on the "Go to Harmony" button which will direct you to the staking dashboard. 在创建好新的钱包以后点击“Go to Harmony“，之后会自动转到staking dashboard页面。
+
+![](../.gitbook/assets/image.png)
+
+![](../.gitbook/assets/image%20%282%29.png)
 
 ![](../.gitbook/assets/screen-shot-2020-05-11-at-4.22.24-pm.png)
+
+## **Step 3: Add another account添加账号**
+
+![](../.gitbook/assets/image%20%281%29.png)
+
+If you want to import your account from other wallets, e.g. cli, you can recover account with Mnemonic or Private Key.如果你想导入其他钱包中的地址，如CLI，你可以通过导入私钥或助记符。
+
+![](../.gitbook/assets/image%20%286%29.png)
 
 ## Transferring Funds
 
