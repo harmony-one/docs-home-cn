@@ -67,7 +67,7 @@ In order to choose their validators and manage their delegation, delegators have
 
 ![this screen shot of the Validator page is zoomed for demostration purpose.](../.gitbook/assets/image%20%2823%29.png)
 
-| **Validator Profile** | Delegators can delegate on the Validator Profile page and check detailed information of validators. |
+| **Validator Profile**验证者资料 | Delegators can delegate on the Validator Profile page and check detailed information of validators.委托人可以在“Validator Profile”页面上进行委托，并检查验证者的详细信息。 |
 | :--- | :--- |
 | Delegated总质押 | Total ONE delegated to this validator委托给验证者的ONE代币总量 |
 | Self stake自抵押 | Amount of ONE staked by validator 验证者委托给自己的ONE代币总量 |
