@@ -4,7 +4,7 @@ description: >-
   validator node is not elected in the EPOS committee.
 ---
 
-# Why am I not elected in the EPOS Committee
+# Why am I not elected in the EPOS Committee 为什么我的节点没有被选中
 
 ## EPOS medium document
 
