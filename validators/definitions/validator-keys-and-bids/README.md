@@ -1,4 +1,4 @@
-# Validator, BLS key, Instance
+# Validator, BLS key, Instance 验证者，BLS钥匙，机器
 
 ## Validator Setup and Configuration
 
@@ -16,10 +16,28 @@ There are many fields to configure for your validator. It’s worth clarifying s
 2. **rate:** The commission fee \(%\) the validator charges from the block reward. 
 3. **bls-pubkeys:** One or multiple BLS public keys the validator will sign with. Each BLS key will be used separately to bid for a slot and if successful, the key is obligated to validate blocks. 
 
+### **验证者设置和配置** <a id="b99e"></a>
+
+Harmony区块链中的验证者可以是个人或公司，他们通过抵押代币并运行节点（验证者客户端软件）来验证区块。 验证者可以创建一个或多个验证私钥（也称为[BLS](https://en.wikipedia.org/wiki/Boneh%E2%80%93Lynn%E2%80%93Shacham)私钥），这些私钥将用于在已验证的区块上签名。
+
+要成为Harmony的验证者，您需要执行以下操作：
+
+1. 设置一个验证者节点，并使其与最新的区块链网络完全同步。 请按照[**此处**](https://docs.harmony.one/home/validators/first-time-setup)运行节点。
+2. 通过发送一个“**创建节点**”交易，创建一个链上的节点记录， 请按照[**此处**](https://docs.harmony.one/home/validators/first-time-setup/creating-a-validator)创建验证者。
+3. 您在验证者记录中会添加一个BLS私钥，用这个私钥关联的节点开始验证。
+
+在验证者配置过程中有许多术语，在这里我们为大家再详细地解释一下：
+
+1. **数量：**验证者最初将抵押的ONE代币的数量。
+2. **费率：**验证者从奖励中收取的佣金（％）。（请参阅章节：区块奖励）
+3. **bls-pubkeys：**验证者将使用其签名的一个或多个BLS公钥。 每个BLS公钥将单独用于竞标一个席位，如果成功，则该公钥必须用于验证区块。 （请参见“席位竞标与选择”章节）
+
+有关如何配置验证者的详细指南，请参照[**此处**](https://docs.harmony.one/home/validators/managing-your-validator/changing-validator-information)。
+
 ## BLS key\(s\)
 
 {% hint style="info" %}
-[BLS](https://en.wikipedia.org/wiki/Boneh%E2%80%93Lynn%E2%80%93Shacham) stands for **Boneh–Lynn–Shacham**. It is a digital signature method used for verifying the authenticity of digital messages or documents.
+[BLS](https://en.wikipedia.org/wiki/Boneh%E2%80%93Lynn%E2%80%93Shacham) stands for **Boneh–Lynn–Shacham**. It is a digital signature method used for verifying the authenticity of digital messages or documents. BLS （Boneh-Lynn-Shacham）签名算法是一种可以实现签名聚合和密钥聚合的算法，它可以把一笔交易中的所有签名和公钥合并成单个签名和公钥，且合并过程不可见（无从追溯这个签名或公钥是否通过合并而来）。
 {% endhint %}
 
 A BLS key represents what the validator signs the blocks with, and is a way of authenticating the validator. A validator can have multiple keys to sign with, this means that a validator is signing blocks in parallel.
