@@ -2,7 +2,7 @@
 description: A web-based wallet for holding cryptocurrency
 ---
 
-# Math Wallet
+# Math Wallet 麦子钱包
 
 ![](../../.gitbook/assets/screen-shot-2020-01-15-at-8.54.52-am.png)
 
