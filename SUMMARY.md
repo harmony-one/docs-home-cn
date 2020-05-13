@@ -82,7 +82,7 @@
         * [Post-Mortem: OSTN Rolling Upgrade failure Mar 21, 2020](validators/extras/status/outages/post-mortem-ostn-rolling-upgrade-failure-mar-21-2020.md)
 * [Partners合作伙伴](partners/README.md)
   * [Case Studie案例分析](partners/case-studies.md)
-  * [Cross-Border Finance](partners/cross-border-finance.md)
+  * [Cross-Border Finance跨境金融](partners/cross-border-finance.md)
   * [Ecosystem](partners/ecosystem.md)
   * [Reference](partners/on-boarding-process.md)
   * [Onboarding](partners/onboard-process-walkthrough.md)
