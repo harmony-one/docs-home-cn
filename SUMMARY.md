@@ -6,7 +6,7 @@
   * [Ledger Nano S 硬件钱包](wallets/ledger/README.md)
     * [Download & Setup 下载设置](wallets/ledger/download-and-setup.md)
     * [Ledger with HMY CLI](wallets/ledger/using-with-hmy-cli.md)
-    * [Ledger with Staking Dashboard](wallets/ledger/using-with-staking-dashboard/README.md)
+    * [Ledger with Staking Dashboard Ledger质押交易](wallets/ledger/using-with-staking-dashboard/README.md)
       * [Sign In With Ledger](wallets/ledger/using-with-staking-dashboard/sign-in-with-ledger.md)
       * [Sending transactions via Ledger](wallets/ledger/using-with-staking-dashboard/send-tx.md)
       * [Staking Transactions via Ledger](wallets/ledger/using-with-staking-dashboard/sign-delegation.md)
