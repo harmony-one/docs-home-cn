@@ -1,4 +1,4 @@
-# Validators
+# Validators 验证者指南
 
 Harmony is one of the first production mainnets to feature a fully sharded PoS architecture. Across the 4 shards in Harmony mainnet, blocks are produced every 8 seconds and cross-shard transactions are finalized in 2 block times.
 
