@@ -1,4 +1,4 @@
-# Staking Transactions via Ledger
+# Staking Transactions via Ledger使用Ledger质押
 
 Harmony Staking Dashboard \([staking.harmony.one](https://staking.harmony.one/validators)\) also supports staking transactions.
 

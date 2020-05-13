@@ -1,4 +1,4 @@
-# Sending transactions via Ledger
+# Sending transactions via Ledger使用Ledger转账
 
 {% hint style="info" %}
 Note: staking dashboard only process transactions on shard 0.
