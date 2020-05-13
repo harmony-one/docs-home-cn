@@ -8,7 +8,7 @@ description: How to setup & connect to your cloud instance
 
 {% page-ref page="google-cloud.md" %}
 
-{% page-ref page="vultr.md" %}
-
 {% page-ref page="digital-ocean.md" %}
+
+{% page-ref page="vultr.md" %}
 

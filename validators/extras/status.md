@@ -17,5 +17,5 @@ Harmony runs not only a production mainnet but also several other testnets.
 
 ## Outages
 
-Information about outages and postmortems on those outages can be found [here](outages/).
+Information about outages and postmortems on those outages can be found [here]().
 
