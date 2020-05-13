@@ -1,16 +1,14 @@
 ---
-description: >-
-  How to setup & connect to your cloud instance。如何接入你的云服务（中国地区推荐AWS，Digital
-  Ocean和Ankr)。
+description: How to setup & connect to your cloud instance
 ---
 
-# Cloud Guides云服务
+# Cloud Guides
 
 {% page-ref page="aws.md" %}
 
+{% page-ref page="google-cloud.md" %}
+
 {% page-ref page="digital-ocean.md" %}
 
-{% page-ref page="ankr.md" %}
-
-
+{% page-ref page="vultr.md" %}
 

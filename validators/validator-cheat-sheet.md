@@ -2,11 +2,11 @@
 description: Example overall validator flow
 ---
 
-# Setup Cheatsheet指令备忘录
+# Setup Cheatsheet
 
 If you are new to setting up Validators, start [here](validator-cheat-sheet.md).
 
-1. Access your cloud instance. 接入你的云服务。
+1. Access your cloud instance.
 
 ```bash
 ssh -i [KEY].pem [SSH ADDRESS]
@@ -14,7 +14,7 @@ ssh -i [KEY].pem [SSH ADDRESS]
 
 ![AWS Connect Example](../.gitbook/assets/image-17.png)
 
-1. Install `tmux`, if your Linux distribution does not come with it. 安装tmu新
+1. Install `tmux`, if your Linux distribution does not come with it.
 
 ```bash
 sudo yum install tmux

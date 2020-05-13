@@ -1,2 +1,2 @@
-# First Time Setup 首次建立
+# First Time Setup
 
