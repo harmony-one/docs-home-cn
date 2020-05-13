@@ -22,7 +22,7 @@ Click on the HARMONY H icon on top right and select create a new address.点击�
 
 Choose a name and password for your account and copy the seed phrase somewhere safe as a backup. This is **VERY IMPORTANT** because lost seeds cannot be recovered.设置账户名称和密码，注意保存自己的助记符，Harmony插件钱包不能导出私钥，因此一旦忘记没有办法找回。
 
-![](../.gitbook/assets/image%20%2815%29.png)
+![](../.gitbook/assets/image%20%2816%29.png)
 
 After you have created a new address you can click on the "Go to Harmony" button which will direct you to the staking dashboard. 在创建好新的钱包以后点击“Go to Harmony“，之后会自动转到staking dashboard页面。
 

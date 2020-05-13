@@ -1,4 +1,4 @@
-# Create or Import Wallet
+# Create or Import Wallet创建或导入钱包
 
 You can choose to create a wallet through the extension or import your existing wallet using a mnemonic phrase or a private key. 您可以选择创建钱包，也可以使用助记词或私钥导入现有的钱包。
 
