@@ -2,7 +2,7 @@
 
 You can choose to create a wallet through the extension or import your existing wallet using a mnemonic phrase or a private key. 您可以选择创建钱包，也可以使用助记词或私钥导入现有的钱包。
 
-![](../../.gitbook/assets/image%20%2818%29.png)
+![](../../.gitbook/assets/image%20%2819%29.png)
 
 When you create a wallet, please write down your mnemonic correctly and keep in a safe place.创建钱包时，请正确写下您的助记符并将其保存在安全的地方。
 
