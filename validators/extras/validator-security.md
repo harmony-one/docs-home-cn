@@ -1,6 +1,6 @@
 # Validator Security
 
-This section will teach you about improving the security of your validator. As a validator you play a crucial role in securing and decentralizing the Harmony network. The security of the network is compounded as ab sum of all validator's security. Therefore is very important that every single piece in the chain is as secure as possible.
+This section will teach you about improving the security of your validator. As a validator you play a crucial role in securing and decentralizing the Harmony network. The security of the network is compounded as a sum of all validator's security. Therefore is very important that every single piece in the chain is as secure as possible.
 
 Depending on your configuration, if you have the BLS key on your validator server and maybe also the password to decrypt it, for example in order to restart your node automatically, it is strongly recommended that you secure the access to your validator as much as possible.
 
@@ -64,13 +64,13 @@ Make sure to **back-up this password** and also be aware where you place it so t
 
 ### 5. Once logged in, update your OS
 
-For Debian based systems like Ubuntu or Debian use the command below:
+For Debian based systems like Ubuntu or Debian use the command bellow:
 
 ```text
 sudo apt-get update && sudo apt-get upgrade
 ```
 
-For Amazon Linux use the command below:
+For Amazon Linux use the command bellow:
 
 ```text
 sudo yum update
