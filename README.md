@@ -1,6 +1,6 @@
-# Introduction
+# Introduction简介
 
-## **What is Harmony?‌**
+## **What is Harmony?‌ Harmony 是谁？**
 
 **‌**Harmony is a fast and secure blockchain for decentralized applications. Our production mainnet supports 4 shards of 1000 nodes, producing blocks in 8 seconds with finality.
 

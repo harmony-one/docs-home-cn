@@ -1,6 +1,6 @@
 # Table of contents
 
-* [Introduction](README.md)
+* [Introduction简介](README.md)
 * [Wallets钱包](wallets/README.md)
   * [Harmony Wallet \(Harmony Browser Extension\) Harmony谷歌插件钱包](wallets/chrome-extension.md)
   * [Ledger](wallets/ledger/README.md)
@@ -32,7 +32,7 @@
   * [Wallet Management钱包管理](wallets/wallet-management/README.md)
     * [Private Key Management私钥管理](wallets/wallet-management/key-management.md)
     * [Missing Funds on Exchange 交易所丢失交易](wallets/wallet-management/missing-funds-on-exchange.md)
-* [Delegators](delegator/README.md)
+* [Delegators 委托者](delegator/README.md)
   * [Staking Dashboard](delegator/staking-dashboard.md)
   * [Choosing a Validator](delegator/choosing-a-validator.md)
   * [Undelegation](delegator/undelegation.md)
