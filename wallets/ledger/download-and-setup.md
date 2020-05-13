@@ -2,6 +2,8 @@
 
 {% hint style="info" %}
 Currently Harmony is available only on Ledger Nano S.
+
+目前Harmony仅仅支持Ledger Nano S。
 {% endhint %}
 
 ## **Step 1. Turn on Developer**
