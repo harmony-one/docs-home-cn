@@ -1,6 +1,6 @@
 # Sign In With Ledger
 
-Plug in your Ledger and open the Harmony Ledger App. Your device will be detected by your computer.
+Plug in your Ledger and open the Harmony Ledger App. Your device will be detected by your computer.在您的电脑上连接您的Ledger，然后打开Harmony Ledger App。 您的设备将被计算机检测到。
 
 ![](../../../.gitbook/assets/image-158.png)
 
