@@ -8,7 +8,7 @@ Sign in from the staking dashboard [https://staking.harmony.one/validators 1](ht
 
 Sign in to your Math Wallet browser extension. You will see a Login Request pop up. Select your wallet and click Accept.通过您的Math Wallet浏览器扩展程序登陆。 您会看到一个登录请求弹出窗口。 选择您的钱包，然后单击接受。
 
-![](../../.gitbook/assets/image%20%2822%29.png)
+![](../../.gitbook/assets/image%20%2827%29.png)
 
 You will be brought back to the **Validator** page of Staking Dashboard. You will be able to see your address on the top left corner under the Harmony logo which means you are now signed in to your account.您将被带回到Staking Dashboard的Validator页面。 您将可以在Harmony徽标下方的左上角看到您的地址，这意味着您现在已登录帐户。
 
