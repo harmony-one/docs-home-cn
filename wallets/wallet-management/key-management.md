@@ -79,19 +79,22 @@ Below is an index that shows you which wallets can allow to you import or export
 <table>
   <thead>
     <tr>
-      <th style="text-align:left"></th>
-      <th style="text-align:left">Export
-        <br />Mnemonic</th>
+      <th style="text-align:left">&#x94B1;&#x5305;</th>
+      <th style="text-align:left">&#x5BFC;&#x51FA;
+        <br />&#x52A9;&#x8BB0;&#x7B26;</th>
       <th style="text-align:left">
-        <p>Export</p>
-        <p>Private Key</p>
+        <p>&#x5BFC;&#x51FA;</p>
+        <p>&#x79C1;&#x94A5;</p>
       </th>
-      <th style="text-align:left">&#x52A9;&#x8BB0;&#x7B26;</th>
       <th style="text-align:left">
-        <p>Import</p>
-        <p>Private Key</p>
+        <p>&#x5BFC;&#x5165;</p>
+        <p>&#x52A9;&#x8BB0;&#x7B26;</p>
       </th>
-      <th style="text-align:left">&#x652F;&#x6301;</th>
+      <th style="text-align:left">
+        <p>&#x5BFC;&#x5165;</p>
+        <p>&#x79C1;&#x94A5;</p>
+      </th>
+      <th style="text-align:left">&#x652F;&#x6301;&#x8DE8;&#x5206;&#x7247;&#x8F6C;&#x8D26;</th>
     </tr>
   </thead>
   <tbody>
