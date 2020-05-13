@@ -35,7 +35,7 @@
 * [Delegators 委托者](delegator/README.md)
   * [Staking Dashboard抵押Dashboard](delegator/staking-dashboard.md)
   * [Choosing a Validator选择你的验证者](delegator/choosing-a-validator.md)
-  * [Undelegation](delegator/undelegation.md)
+  * [Undelegation取消委托](delegator/undelegation.md)
 * [Validators](validators/README.md)
   * [Terms & Concepts](validators/definitions/README.md)
     * [Validator, BLS key, Instance](validators/definitions/validator-keys-and-bids/README.md)
