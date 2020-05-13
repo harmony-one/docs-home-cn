@@ -33,7 +33,7 @@
     * [Private Key Management私钥管理](wallets/wallet-management/key-management.md)
     * [Missing Funds on Exchange 交易所丢失交易](wallets/wallet-management/missing-funds-on-exchange.md)
 * [Delegators 委托者](delegator/README.md)
-  * [Staking Dashboard](delegator/staking-dashboard.md)
+  * [Staking Dashboard抵押Dashboard](delegator/staking-dashboard.md)
   * [Choosing a Validator](delegator/choosing-a-validator.md)
   * [Undelegation](delegator/undelegation.md)
 * [Validators](validators/README.md)
