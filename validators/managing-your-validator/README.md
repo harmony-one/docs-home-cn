@@ -1,2 +1,2 @@
-# Managing Your Validator
+# Managing Your Validator管理节点
 

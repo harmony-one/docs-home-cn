@@ -12,11 +12,11 @@ Previous versions have a known bug and are not supported.
 
 ![](../../.gitbook/assets/image-8.png)
 
-1. Open the extension in your browser and create new password.
+Open the extension in your browser and create new password.点击浏览器插件并创建新密码。
 
 ![](../../.gitbook/assets/image-36.png)
 
-1. Select **Harmony** from the list of networks.
+Select **Harmony** from the list of networks.切换至Harmony网络。
 
-![](../../.gitbook/assets/image-58.png)
+![](../../.gitbook/assets/image%20%285%29.png)
 
