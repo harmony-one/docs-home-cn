@@ -13,14 +13,14 @@ You will need to open Web Wallet in order to view account details and perform tr
 
 您将需要打开网页钱包以查看帐户详细信息并执行交易。 
 
-![](../../.gitbook/assets/image%20%2815%29.png)
+![](../../.gitbook/assets/image%20%2816%29.png)
 
 1. 请选择要打开的钱包，然后在Math Wallet扩展弹出窗口上单击网页钱包。 
 2. 单击网页钱包后，将打开一个新选项卡，点击通过Math Wallet 浏览器扩展程序登录并确认登录请求。
 
-![](../../.gitbook/assets/image%20%286%29.png)
+![](../../.gitbook/assets/image%20%287%29.png)
 
-![](../../.gitbook/assets/image%20%2812%29.png)
+![](../../.gitbook/assets/image%20%2813%29.png)
 
 ## Sending transactions转账
 
@@ -33,7 +33,7 @@ You will need to open Web Wallet in order to view account details and perform tr
 
 在点击转账之前，请确认接受地址，转账金额，手续费，收款人分片数字是否正确。
 
-![](../../.gitbook/assets/image%20%288%29.png)
+![](../../.gitbook/assets/image%20%289%29.png)
 
 ![](../../.gitbook/assets/assets-lleolyqeg_gkuo5rehq-lybzqswxmaxzckbefto-lyc0-a584r4odsvs_9b-image.png)
 

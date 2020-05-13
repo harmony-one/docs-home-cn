@@ -44,5 +44,7 @@ There are two buttons associated with Harmony One app. The **install** button ca
 
 To use Harmony One app, please check your Ledger Nano device and click the buttons to open the app.
 
-要使用Harmony One应用程序，请检查您的Ledger Nano设备，然后单击按钮以打开该应用程序。
+要使用Harmony One应用程序，请检查您的Ledger Nano设备，然后双击按钮以打开该应用程序。
+
+![](../../.gitbook/assets/image%20%285%29.png)
 
