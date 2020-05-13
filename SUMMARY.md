@@ -4,7 +4,7 @@
 * [Wallets钱包](wallets/README.md)
   * [Harmony Wallet \(Harmony Browser Extension\) Harmony谷歌插件钱包](wallets/chrome-extension.md)
   * [Ledger Nano S 硬件钱包](wallets/ledger/README.md)
-    * [Download & Setup](wallets/ledger/download-and-setup.md)
+    * [Download & Setup 下载设置](wallets/ledger/download-and-setup.md)
     * [Ledger with HMY CLI](wallets/ledger/using-with-hmy-cli.md)
     * [Ledger with Staking Dashboard](wallets/ledger/using-with-staking-dashboard/README.md)
       * [Sign In With Ledger](wallets/ledger/using-with-staking-dashboard/sign-in-with-ledger.md)

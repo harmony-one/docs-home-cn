@@ -1,4 +1,4 @@
-# Download & Setup
+# Download & Setup 下载设置
 
 {% hint style="info" %}
 Currently Harmony is available only on Ledger Nano S.

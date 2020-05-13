@@ -40,23 +40,25 @@ If you want to import your account from other wallets, e.g. cli, you can recover
 
 ![](../.gitbook/assets/image%20%286%29.png)
 
-## Transferring Funds
+## Transferring Funds 转账交易
 
-1. After logging into your account on the extension you'll be directed to the staking dashboard.  Click on "Portfolio" , and then "Transfer funds"
+After logging into your account on the extension you'll be directed to the staking dashboard.  Click on "Portfolio" , and then "Transfer funds" 在扩展程序上登录帐户后，staking dashboard 页面将会自动导。 点击“Portfolio投资组合”，然后点击“Transfer funds 转移资金”
 
 ![](../.gitbook/assets/screen-shot-2020-05-11-at-4.28.52-pm.png)
 
-1. In the pop-up input the destination address and amount you want to transfer. Click next, and then click "Confirm and Sign" to authorize the transfer
+In the pop-up input the destination address and amount you want to transfer. Click next, and then click "Confirm and Sign" to authorize the transfer 在弹出窗口中输入您要转账的目标地址和金额。 单击下一步，然后单击“确认并签名”以授权转账
 
 ![Pop-Up ](../.gitbook/assets/screen-shot-2020-05-11-at-4.36.45-pm.png)
 
-## Staking
+## Staking质押交易 
 
-1. Click on "Validators" in the staking dashboard to see all the validators 
+Click on "Validators" in the staking dashboard to see all the validators 
+
+在“验证者名单”中查看所有验证者
 
 ![](../.gitbook/assets/screen-shot-2020-05-11-at-4.41.22-pm.png)
 
-1. Select the validator you would like to stake by clicking on their name, and then click "Delegate". Enter the amount you would like to stake, and confirm the transaction
+Select the validator you would like to stake by clicking on their name, and then click "Delegate". Enter the amount you would like to stake, and confirm the transaction  选择要放样的验证者并点击他们的名字，然后单击“委托”。 输入您想质押的金额，并确认交易
 
 ![](../.gitbook/assets/screen-shot-2020-05-11-at-4.45.27-pm.png)
 
