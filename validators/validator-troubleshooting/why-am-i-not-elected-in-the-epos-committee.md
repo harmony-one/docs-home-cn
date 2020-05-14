@@ -44,7 +44,7 @@ Non election in the EPOS committee are caused by two main issues 你的节点没
 {% tabs %}
 {% tab title="CLI" %}
 ```bash
- ./hmy --node="https://api.s0.os.hmny.io" blockchain median-stake | grep median
+ ./hmy --node="https://api.s0.t.hmny.io" blockchain median-stake | grep median
     "epos-median-stake": "1550000000000000000000000.000000000000000000",
 ```
 {% endtab %}
@@ -86,49 +86,29 @@ Issue the command
 ./hmy -n [https://api.s0.os.hmny.io](https://api.s0.os.hmny.io) blockchain validator information \[VALIDATOR-ACCOUNT\] \| grep epos-status
 
 ```bash
-./hmy --node="https://api.s0.os.hmny.io" blockchain validator information  one1u6c4wer2dkm767hmjeehnwu6tqqur62gx9vqsd | grep epos-status
+./hmy --node="https://api.s0.t.hmny.io" blockchain validator information  one1u6c4wer2dkm767hmjeehnwu6tqqur62gx9vqsd | grep epos-status
     "epos-status": "currently elected",
 ```
 
 If **not eligible**, update it to active via the command  
 ./hmy -n [https://api.s0.os.hmny.io](https://api.s0.os.hmny.io) staking edit-validator --validator-addr &lt;ONE\_VALIDATOR\_ACCOUNT&gt; --active true --passphrase
 
-{% tabs %}
-{% tab title="Open Staking Network" %}
 ```bash
-./hmy --node="https://api.s0.os.hmny.io" staking edit-validator --validator-addr one1u6c4wer2dkm767hmjeehnwu6tqqur62gx9vqsd --active true --passphrase
+./hmy --node="https://api.s0.t.hmny.io" staking edit-validator --validator-addr one1u6c4wer2dkm767hmjeehnwu6tqqur62gx9vqsd --active true --passphrase
 ```
-{% endtab %}
-
-{% tab title="Partner Testnet" %}
-```bash
-./hmy --node="https://api.s0.ps.hmny.io" staking edit-validator --validator-addr one1u6c4wer2dkm767hmjeehnwu6tqqur62gx9vqsd --active true --passphrase
-```
-{% endtab %}
-{% endtabs %}
 
 **Finally check your signed blocked**
 
 using the command  
 ./hmy -n [https://api.s0.os.hmny.io](https://api.s0.os.hmny.io) blockchain validator information &lt;ONE\_VALIDATOR\_ACCOUNT&gt;
 
-{% tabs %}
-{% tab title="Open Staking Network" %}
 ```bash
-./hmy --node="https://api.s0.os.hmny.io" blockchain validator information one1u6c4wer2dkm767hmjeehnwu6tqqur62gx9vqsd
+./hmy --node="https://api.s0.t.hmny.io" blockchain validator information one1u6c4wer2dkm767hmjeehnwu6tqqur62gx9vqsd
 ```
-{% endtab %}
 
-{% tab title="Partner Testnet" %}
+and search for:
+
 ```bash
-./hmy --node="https://api.s0.ps.hmny.io" blockchain validator information one1u6c4wer2dkm767hmjeehnwu6tqqur62gx9vqsd
-```
-{% endtab %}
-{% endtabs %}
-
-and search for :
-
-```text
     "current-epoch-performance": {
       "current-epoch-signing-percent": {
         "current-epoch-signed": 50,
@@ -160,19 +140,9 @@ It means the harmony node binary is not running. Please follow this documentatio
 
 and the network block height
 
-{% tabs %}
-{% tab title="Open Staking Network" %}
 ```bash
-./hmy --node="https://api.s0.os.hmny.io" blockchain latest-headers | grep blockNumber
+./hmy --node="https://api.s0.t.hmny.io" blockchain latest-headers | grep blockNumber
 ```
-{% endtab %}
-
-{% tab title="Partner Testnet" %}
-```bash
-./hmy --node="https://api.s0.ps.hmny.io" blockchain latest-headers | grep blockNumber
-```
-{% endtab %}
-{% endtabs %}
 
 Make sure network height and your current height are very close or equal. Also, for non shard 0 node, you need 2 DBs to be synced, your non-shard 0 and the shard 0.
 
@@ -190,7 +160,7 @@ tail -f latest/zero*.log | grep BINGO
 
 And you’ll notice in your validator information that you started signing blocks
 
-```text
+```bash
     "current-epoch-performance": {
       "current-epoch-signing-percent": {
         "current-epoch-signed": 60,
