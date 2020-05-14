@@ -1,6 +1,6 @@
 # Adding A Validator Logo
 
-## Uploading A Custom Logo <a id="uploading-a-custom-logo"></a>
+=Uploading A Custom Logo
 
 1. Fork this github repo: [https://github.com/harmony-one/validator-logos](https://github.com/harmony-one/validator-logos)​
 2. Add your logo by creating the logo image name using your Harmony one address as the file name and placing it inside "validators" folder. The logo image needs to be a .jpg file with 256x256 pixels or 512x512 pixels.

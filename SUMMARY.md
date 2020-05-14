@@ -63,7 +63,7 @@
     * [Setup Cheatsheet指令备忘录](validators/first-time-setup/setup-cheatsheet-zhi-ling-bei-wang-lu.md)
   * [Managing Your Validator管理节点](validators/managing-your-validator/README.md)
     * [Checking Validator Information检查节点信息](validators/managing-your-validator/checking-validator-information.md)
-    * [Changing Validator Information](validators/managing-your-validator/changing-validator-information.md)
+    * [Changing Validator Information编辑验证者信息](validators/managing-your-validator/changing-validator-information.md)
     * [Delegating To A Validator](validators/managing-your-validator/delegating-to-a-validator.md)
     * [Undelegating From A Validator](validators/managing-your-validator/undelegating-to-a-validator.md)
     * [Seeing Stakers](validators/managing-your-validator/seeing-stakers.md)

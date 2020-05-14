@@ -1,4 +1,4 @@
-# Changing Validator Information
+# Changing Validator Information编辑验证者信息
 
 You can edit your validator’s information using the CLI with the following command. 您可以使用CLI执行以下命令来编辑验证者的信息。
 
