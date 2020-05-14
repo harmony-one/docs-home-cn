@@ -4,13 +4,19 @@ description: AutoNode 可让您无缝启动节点。它会自动确保您的验�
 
 # AutoNode无缝启动
 
+{% hint style="danger" %}
+AutoNode is **not optimized for mainnet** yet. This notification will be removed when AutoNode is mainnet compatible.   
+****  
+**Use "**[**First Time Setup**](first-time-setup/)**" to spin up your validator node!** 
+{% endhint %}
+
 ## **Installing AutoNode** 安装AutoNode
 
 ### **Step 1:** Spin up your instance on [AWS](cloud-guides/aws.md) or [other providers](https://docs.harmony.one/home/validators/first-time-setup/cloud-guides). 步骤1：在AWS或其他提供商上启动您的实例。
 
 > It is recommended to go with Ubuntu or Amazon Linux as your operating system. 建议将Ubuntu或Amazon Linux用作操作系统。
 
-### **Step 2:** [SSH](https://docs.harmony.one/home/validators/first-time-setup/cloud-guides/aws#step-2-connecting-to-your-aws-instance) into the machine. 步骤2：通过SSH接入计算机。
+### **Step 2:** SSH into the machine. 步骤2：通过SSH接入计算机。
 
 {% hint style="warning" %}
 AutoNode **DOES NOT** run with root, thus you need to login with a user that is not root.
