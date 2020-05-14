@@ -48,8 +48,8 @@ sudo apt-get install libgmp-dev
 
 使用以下命令运行node.sh脚本。完成后，它将要求为您的BLS密钥文件输入密码。在随后的屏幕上键入密码，您的节点应该已启动并正在运行。
 
-```text
-./node.sh -S -c -z -I -N staking -k [BLS KEY FILE].key
+```bash
+./node.sh -S -z -k [BLS KEY FILE].key
 ```
 
 Use `-S` to run node.sh as any user.
@@ -102,7 +102,7 @@ Harmony依靠信标链（也称为分片0）来促进跨分片交易。为了使
 
 确认您已完全同步，然后再继续。以**./hmy --node= "\[SHARD\_RPC\_ENDPOINT\]" blockchain latest-headers**的格式发出命令，其中 SHARD\_RCP\_ENDPOINT将采用以下格式：api.s \[Shard＃\]。\[NETWORK\] .hmny.io 例如：
 
-```text
+```bash
 ./hmy --node="https://api.s0.t.hmny.io" blockchain latest-headers‌
 ```
 
@@ -126,7 +126,7 @@ cp *.key .hmy/blskeys
 
 Make sure all your BLS keys belong to the same shard when using multiple BLS keys. You can use the command below to check each one of them.使用多个BLS密钥时，请确保所有BLS密钥都属于同一分片。您可以使用下面的命令来检查每个。
 
-```text
+```bash
 ./hmy --node="https://api.s0.t.hmny.io" utility shard-for-bls [BLS PUBLIC KEY]
 ```
 
@@ -141,7 +141,7 @@ For any `.key` if no passphrase file is available, it will use the default speci
 **4.** You can now run the node using parameter **-M** for multiple BLS keys. Parameter **-k** will not be used anymore as we are loading multiple BLS keys here现在，您可以对多个BLS密钥使用参数-M运行该节点。由于将在此处加载多个BLS密钥，因此不再使用参数-k：:
 
 ```text
-./node.sh -S -c -z -I -N staking -M
+./node.sh -S -z -M
 ```
 
 ## Helpful Information有用的信息 <a id="helpful-information"></a>
