@@ -18,8 +18,14 @@ Check chain block height with `./hmy blockchain latest-header --node=[endpoint]`
 
 Replace everything in \[ \] with your own data: 用您自己的数据替换\[\]中的所有内容：
 
-```text
-./hmy --node="https://api.s0.t.hmny.io" staking create-validator \    --validator-addr [ONE ADDRESS] --amount 10000 \    --bls-pubkeys [BLS PUBLIC KEY1],[BLS PUBLIC KEY2] \    --name "[NAME]" --identity "[IDENTITY]" --details "DETAILS" \    --security-contact "CONTACT" --website "YOUR-WEBSITE.COM" \    --max-change-rate 0.1 --max-rate 0.1 --rate 0.1 \    --max-total-delegation 100000000 --min-self-delegation 10000 --passphrase
+```bash
+./hmy --node="https://api.s0.t.hmny.io" staking create-validator \ 
+   --validator-addr [ONE ADDRESS] --amount 10000 \    
+   --bls-pubkeys [BLS PUBLIC KEY1],[BLS PUBLIC KEY2] \    
+   --name "[NAME]" --identity "[IDENTITY]" --details "DETAILS" \    
+   --security-contact "CONTACT" --website "YOUR-WEBSITE.COM" \    
+   --max-change-rate 0.1 --max-rate 0.1 --rate 0.1 \    
+   --max-total-delegation 100000000 --min-self-delegation 10000 --passphrase
 ```
 
 Copy the entire command. **Extra white spaces in the command could cause errors.** 复制整个命令。命令中**多余的空格可能导致错误**。
@@ -100,13 +106,13 @@ Once your validator is elected, the validator will receive rewards and you will 
 
 选出验证人后，验证人将获得奖励，您将在日志中看到“ BINGO”。
 
-```text
+```bash
 tail -n 1000 latest/zerolog-validator-*.log | grep -i BINGO
 ```
 
 Example output输出示例：:
 
-```text
+```bash
 {"level":"info","port":"9000","ip":"213.136.79.89","blockNum":3916,"epochNum":26,"ViewId":3916,"blockHash":"0xca71fc9aa92f694f664aa34d7e3e82cf9b678e3a062d3bbbabebfbc5f0598d84","numTxns":0,"numStakingTxns":0,"caller":"/mnt/jenkins/workspace/harmony-release/harmony/node/node_handler.go:359","time":"2019-12-11T14:49:08.983338784+01:00","message":"BINGO !!! Reached Consensus"}
 ```
 
@@ -118,13 +124,13 @@ If you don't want to participate in the election anymore, you can turn your vali
 
 Use the format command **./hmy --node="**[**https://api.s0.os.hmny.io**](https://api.s0.os.hmny.io/)**" blockchain validator information \[ONE ADDRESS\]** to check your validator information: 使用格式命令 **./hmy --node="**[**https://api.s0.os.hmny.io**](https://api.s0.os.hmny.io/)**" blockchain validator information \[ONE ADDRESS\]** 来检查您的验证者信息[：](https://api.s0.os.hmny.io”区块链验证程序信息[一个地址]检查您的验证程序信息：)
 
-```text
+```bash
 ./hmy --node="https://api.s0.t.hmny.io" blockchain validator information one1u6c4wer2dkm767hmjeehnwu6tqqur62gx9vqsd
 ```
 
 Example output: 输出示例：
 
-```text
+```bash
 {  "id": "0",  "jsonrpc": "2.0",  "result": {    "booted-status": null,    "current-epoch-performance": {      "current-epoch-signing-percent": {        "current-epoch-signed": 95,        "current-epoch-signing-percentage": "1.000000000000000000",        "current-epoch-to-sign": 95,        "num-beacon-blocks-until-next-epoch": 21      }    },    "currently-in-committee": true,    "epos-status": "currently elected",    "epos-winning-stake": "6846745750000000000000000.000000000000000000",    "lifetime": {      "apr": "6.268807306506151937",      "blocks": {        "signed": 8602,        "to-sign": 8621      },      "reward-accumulated": 7.076705797578808e+21    },    "metrics": {      "by-bls-key": [        {          "earned-reward": 17373723528937510000,          "key": {            "bls-public-key": "1227f1ef2ba879562c693c2f99af023a9a127b25bfe21fa41c637039bfbd9cc68919d0edce4f2aa57983ffcbc39b1b01",            "earning-account": "one1u6c4wer2dkm767hmjeehnwu6tqqur62gx9vqsd",            "effective-stake": "1369349150000000000000000.000000000000000000",            "group-percent": "0.032657375054393815",            "overall-percent": "0.010450360017406021",            "shard-id": 1          }        }      ]    },    "total-delegation": 4.184679e+24,    "validator": {      "address": "one1u6c4wer2dkm767hmjeehnwu6tqqur62gx9vqsd",      "bls-public-keys": [        "1227f1ef2ba879562c693c2f99af023a9a127b25bfe21fa41c637039bfbd9cc68919d0edce4f2aa57983ffcbc39b1b01"      ],      "creation-height": 489,      "delegations": [        {          "amount": 1.184679e+24,          "delegator-address": "one1u6c4wer2dkm767hmjeehnwu6tqqur62gx9vqsd",          "reward": 4.383229639373062e+21,          "undelegations": []        },        {          "amount": 3e+24,          "delegator-address": "one167gc5t3f4uvupns2h8fsem9xzdgn2egra9w8d3",          "reward": 2.1040394698378544e+21,          "undelegations": []        }      ],      "details": "Soph #P-OPS Validator node",      "identity": "Soph",      "last-epoch-in-committee": 58,      "max-change-rate": "0.050000000000000000",      "max-rate": "0.900000000000000000",      "max-total-delegation": 1e+27,      "min-self-delegation": 1e+22,      "name": "Soph #P-OPS Validator node",      "rate": "0.100000000000000000",      "security-contact": "Soph",      "update-height": 489,      "website": "soph.harmony.one"    }  }}
 ```
 
