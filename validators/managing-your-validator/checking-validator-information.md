@@ -1,18 +1,26 @@
-# Checking Validator Information
+# Checking Validator Information检查节点信息
 
-You can check your validator information using the following command:
+## Using the Binary:使用Binary
 
-{% tabs %}
-{% tab title="Open Staking Testnet" %}
 ```bash
-./hmy --node="https://api.s0.os.hmny.io" blockchain validator information [ONE ADDRESS]
+./hmy blockchain validator information [ONE ADDRESS] --node="<endpoint-address>"
 ```
-{% endtab %}
-{% endtabs %}
 
-Output example bellow:
+## Using the Shell Wrapper 使用Shell Wrapper:
 
-```text
+```bash
+./hmy.sh -- blockchain validator information [ONE ADDRESS] --node="<endpoint-address>"
+```
+
+## Example实例:
+
+```bash
+./hmy blockchain validator information [ONE ADDRESS] --node="https://api.s0.t.hmny.io"
+```
+
+### Output输出:
+
+```bash
 {
   "id": "0",
   "jsonrpc": "2.0",
@@ -90,5 +98,9 @@ Output example bellow:
 If your validator does not sign more than 2/3 of the blocks in an epoch, the validator will be removed from the pool of eligible validators.
 
 In order to be included in the pool again, you will have to use send an [Edit Validator transaction](https://docs.harmony.one/validators/validator/managing-your-validator/changing-your-validator-profile) with `--active true.`
+
+如果您的验证者在一个epoch内签名的块不超过2/3，则该验证者将不再是合格的验证者被取消活跃状态。 
+
+你可以使用-active true的Edit Validator指令将验证者变为活跃状态。
 {% endhint %}
 
