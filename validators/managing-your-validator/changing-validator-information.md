@@ -5,14 +5,14 @@ You can edit your validator’s information using the CLI with the following com
 ## Using the Binary使用Binary:
 
 ```bash
-./hmy --node="<endpoint-address>" staking edit-validator \
+./hmy --node="https://api.s0.t.hmny.io" staking edit-validator \
     --validator-addr [ONE ADDRESS] [FIELDS TO EDIT] --passphrase
 ```
 
 ## Using the Shell Wrapper使用Shell Wrapper:
 
 ```bash
-./hmy.sh -- node="<endpoint-address>" staking edit-validator \
+./hmy.sh -- node="https://api.s0.t.hmny.io" staking edit-validator \
     --validator-addr [ONE ADDRESS] [FIELDS TO EDIT] --passphrase
 ```
 
