@@ -64,7 +64,7 @@ In order to choose their validators and manage their delegation, delegators have
 | Status状态 | Election status of validator in current epoch 当前epoch验证者是否当选 |
 | Name姓名 | Validator name验证者姓名 |
 
-![this screen shot is zoomed for demonstration purpose.](../.gitbook/assets/image%20%2825%29.png)
+![this screen shot is zoomed for demonstration purpose.](../.gitbook/assets/image%20%2827%29.png)
 
 | **Validator Profile**验证者资料 | Delegators can delegate on the Validator Profile page and check detailed information of validators.委托人可以在“Validator Profile”页面上进行委托，并检查验证者的详细信息。 |
 | :--- | :--- |
@@ -84,5 +84,5 @@ In order to choose their validators and manage their delegation, delegators have
 | Reward rate history历史回报率 | Expected annual percentage return rate for validator at every epoch在每个Epoch的历史预期年回报率 |
 | Delegators 委托者 | List of accounts that delegated to this validator and delegation amount委托给该验证者的账户名单和委托金额 |
 
-![this screen shot is zoomed for demonstration purpose.](../.gitbook/assets/image%20%285%29.png)
+![this screen shot is zoomed for demonstration purpose.](../.gitbook/assets/image%20%286%29.png)
 

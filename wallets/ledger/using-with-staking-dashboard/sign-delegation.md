@@ -34,7 +34,7 @@ Check the delegation amount. If correct, press the right button to continue:
 
 Press right button to sign Delegate Stake confirmation.按右按钮签署代表确认签名。
 
-![](../../../.gitbook/assets/image%20%2819%29.png)
+![](../../../.gitbook/assets/image%20%2821%29.png)
 
 The entire process is shown below整个过程如下所示：
 

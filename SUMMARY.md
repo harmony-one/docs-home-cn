@@ -69,7 +69,7 @@
     * [Seeing Stakers](validators/managing-your-validator/seeing-stakers.md)
     * [Collecting Rewards](validators/managing-your-validator/collecting-rewards.md)
     * [Resetting Your Validator](validators/managing-your-validator/resetting-your-node.md)
-    * [Adding A Validator Logo](validators/managing-your-validator/adding-a-validator-logo.md)
+    * [Adding A Validator Logo添加徽标](validators/managing-your-validator/adding-a-validator-logo.md)
   * [AutoNode](validators/autonode.md)
   * [Troubleshooting问题解决](validators/validator-troubleshooting/README.md)
     * [Why am I not elected in the EPOS Committee 为什么我的节点没有被选中](validators/validator-troubleshooting/why-am-i-not-elected-in-the-epos-committee.md)
