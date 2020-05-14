@@ -6,35 +6,35 @@ description: 'To launch your AWS instance, follow the steps below.'
 
 ## Step 1: Launching your AWS Node步骤1：启动您的AWS节点 <a id="step-1-launching-your-aws-node"></a>
 
-**1.** If you don’t already have an AWS account, register one at [https://aws.amazon.com](https://aws.amazon.com/). 如果您还没有AWS账户，请在[https://aws.amazon.com上注册一个。](https://aws.amazon.com上注册一个。)
+**1.** If you don’t already have an AWS account, register one at [https://aws.amazon.com](https://aws.amazon.com/). 如果您还没有AWS账户，请点击[链接](https://aws.amazon.com/)进行创建。
 
-**2.** Once you have set up and logged into your AWS account, click on the top left bar “Services -&gt; Compute -&gt; EC2". 设置并登录到您的AWS账户后，单击左上方的“服务-&gt;计算-&gt; EC2”。
+**2.** Once you have set up and logged into your AWS account, click on the top left bar “Services -&gt; Compute -&gt; EC2". 当你登录到您的AWS控制台后，**可在页面左下角将语言更改为简体中文**，并点击左上方的“服务-&gt;计算-&gt; EC2”开始EC2实例的创建。
 
 ![](https://blobs.gitbook.com/assets%2F-M-IDt7HenNiPUXWT_3k%2F-M-SpPev7Rx3tI5_8vit%2F-M-SvY1PztdgOcjd96xZ%2Fassets_-LlDqlxK8e45wuh1WH4h_-LlEvL4ccZjjcXwS1WWY_-LlEoh9qALwq7NrZTaQH_assets%252F-LiQYKCcGux_Ib7Gddno%252F-Lj2HFbsGU29d_abCLle%252F-Lj2HGc3Atm_1mokTWXl%252FAWS-step3%20%281%29.png?alt=media&token=2ab52e1b-9c94-4ae3-bf28-738cbeb9a917)
 
-**3.** Click on the blue button “Launch Instance". 单击蓝色按钮“启动instance”。
+**3.** Click on the blue button “Launch Instance". 点击"启动实例"按钮创建一个EC2实例。
 
 ![](https://blobs.gitbook.com/assets%2F-M-IDt7HenNiPUXWT_3k%2F-M-SpPev7Rx3tI5_8vit%2F-M-Sv_xB0oo1-kzPVcC6%2Fassets_-LlDqlxK8e45wuh1WH4h_-LlEvL4ccZjjcXwS1WWY_-LlEoorXG-dkasj2ahJd_assets%252F-LiQYKCcGux_Ib7Gddno%252F-Lj2HFbsGU29d_abCLle%252F-Lj2HGc5NkR0XElzEk6I%252FAWS-step4.png?alt=media&token=29eea808-5ec5-4a38-b483-8d22c1941c76)
 
-**4.** Select “Amazon Linux 2 AMI \(HVM\), SSD Volume Type”.选择 “Amazon Linux 2 AMI \(HVM\), SSD Volume Type”.
+**4.** Select “Amazon Linux 2 AMI \(HVM\), SSD Volume Type”. 选择 “Amazon Linux 2 AMI \(HVM\), SSD Volume Type”镜像进行创建EC2实例.
 
 ![](https://blobs.gitbook.com/assets%2F-M-IDt7HenNiPUXWT_3k%2F-M18EnlHhxfs4IlN_Xhi%2F-M18Eym_BjlKXaPChBdj%2Fassets_-LlDqlxK8e45wuh1WH4h_-LlEvL4ccZjjcXwS1WWY_-LlEoyu2o6s4Sjkvm34W_assets%252F-LiQYKCcGux_Ib7Gddno%252F-Lj2HFbsGU29d_abCLle%252F-Lj2HGc7aUnyzpkZdHd7%252FAWS-step5.png?alt=media&token=d89a9daf-e89c-4472-97ff-c2890379be82)
 
-**5.** Choose instance type “t3.small”.选择机器类型“ t3.small”。
+**5.** Choose instance type “t3.small”.选择实例配置为“ t3.small”。
 
 ![](https://blobs.gitbook.com/assets%2F-M-IDt7HenNiPUXWT_3k%2F-M18EnlHhxfs4IlN_Xhi%2F-M18F2JIm4erwMfI-q2t%2FScreen%20Shot%202020-02-12%20at%206.20.12%20PM.png?alt=media&token=6eafd968-4468-4b58-b843-5360050982ce)
 
-**6.** Click “Next: Configure Instance Details” at the bottom right corner of the page.
+**6.** Click “Next: Configure Instance Details” at the bottom right corner of the page. 
 
-**7.** Don't change anything. Click “Next: Add Storage” at the bottom right corner of the page.
+**7.** Don't change anything. Click “Next: Add Storage” at the bottom right corner of the page. 
 
-**8.** Change the “Size \(GiB\)” category to 30.
+**8.** Change the “Size \(GiB\)” category to 30. 
 
-6. 单击页面右下角的“下一步：配置实例详细信息”。 
+6. 点击页面右下角的“下一步:配置实例详细信息”按钮。
 
-7.不要改变任何东西。单击页面右下角的“下一步：添加存储”。 
+7.保持页面上的参数默认，点击页面右下角的“下一步:添加存储”按钮。
 
-8.将“大小（GiB）”类别更改为30。
+8.将“大小\(GiB\)”字段更改为30。
 
 ![](https://blobs.gitbook.com/assets%2F-M-IDt7HenNiPUXWT_3k%2F-M18EnlHhxfs4IlN_Xhi%2F-M18F8KuOllmF1Crzz68%2FScreen%20Shot%202020-02-27%20at%204.01.10%20PM.png?alt=media&token=feb59374-66c5-4e85-adb7-e020c172ad92)
 
@@ -42,9 +42,9 @@ description: 'To launch your AWS instance, follow the steps below.'
 
 **10.** Click "Add Tag." Then, in the “Key” input box put “Name” in “Value” put “Pangaea-key”.
 
-9.单击“下一步：添加标签”。 
+9.点击“下一步:添加标签”按钮。 
 
-10.单击“添加标签”。然后，在“键”输入框中，在“值”中输入“名称”，然后输入“ Pangaea键”。
+10.点击“添加标签”。然后，在“键”输入框中，在“值”中输入“name”，然后输入“harmony-node”。
 
 ![](https://blobs.gitbook.com/assets%2F-M-IDt7HenNiPUXWT_3k%2F-M-SpPev7Rx3tI5_8vit%2F-M-SvyBAYVDNioAq1d8n%2Fassets_-LlDqlxK8e45wuh1WH4h_-LlEvL4ccZjjcXwS1WWY_-LlEqF6sFapEJt6e_ruU_Capture.png?alt=media&token=c2319a18-312e-447a-814f-9d204183a32e)
 
@@ -56,7 +56,7 @@ description: 'To launch your AWS instance, follow the steps below.'
 
 **14.** Click "Add Rule" again. This time, under "Type" select "Custom TCP Rule", under "Port Range" put "9000" and under "Source" select "Anywhere".
 
-1.单击“下一步：配置安全组”。 
+1.单击“下一步:配置安全组”。 
 
 12.在带有端口22的默认SSH上，将“源”选项更改为“任何地方”。 
 
