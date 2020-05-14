@@ -89,7 +89,7 @@ Below are some differences to using multiBLS vs. single-key instance:
 * MultiBLS和单键实例具有不同的质押指令
 * 为了更改multiBLS实例中的键，需要停止并重新启动该节点。而单键实例可以直接添加到验证器中（因为节点在另一个实例上运行） 
 * 每个验证者允许的BLS密钥总数是外部总座位数的1/3（网络级别） 
-* 使用单个节点签名过多的BLS密钥会导致提高节点故障的风险
+* 使用单个节点签名过多的BLS密钥会增加节点故障的风险
 
 ## Visualization
 
