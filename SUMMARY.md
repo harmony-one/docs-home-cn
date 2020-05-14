@@ -55,7 +55,7 @@
     * [Vultr](validators/cloud-guides/vultr.md)
   * [First Time Setup 首次建立](validators/first-time-setup/README.md)
     * [HMY CLI Download Harmony CLI 下载](validators/first-time-setup/hmy-cli-download-1.md)
-    * [Generating A BLS Key](validators/first-time-setup/generating-a-bls-key.md)
+    * [Generating A BLS Key创建一个新的BLS密钥](validators/first-time-setup/generating-a-bls-key.md)
     * [Syncing with Rclone](validators/first-time-setup/using-rclone.md)
     * [Running a Node](validators/first-time-setup/running-a-node.md)
     * [Creating A Wallet](validators/first-time-setup/creating-a-wallet.md)
