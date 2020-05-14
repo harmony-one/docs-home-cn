@@ -58,7 +58,7 @@
     * [Generating A BLS Key创建一个新的BLS密钥](validators/first-time-setup/generating-a-bls-key.md)
     * [Syncing with Rclone使用Rclone进行同步](validators/first-time-setup/using-rclone.md)
     * [Running a Node运行节点](validators/first-time-setup/running-a-node.md)
-    * [Creating A Wallet](validators/first-time-setup/creating-a-wallet.md)
+    * [Creating A Wallet 创建新的钱包](validators/first-time-setup/creating-a-wallet.md)
     * [Creating A Validator](validators/first-time-setup/creating-a-validator.md)
   * [AutoNode](validators/autonode.md)
   * [Managing Your Validator管理节点](validators/managing-your-validator/README.md)
