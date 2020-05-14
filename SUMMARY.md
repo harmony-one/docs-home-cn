@@ -59,7 +59,7 @@
     * [Syncing with Rclone使用Rclone进行同步](validators/first-time-setup/using-rclone.md)
     * [Running a Node运行节点](validators/first-time-setup/running-a-node.md)
     * [Creating A Wallet 创建新的钱包](validators/first-time-setup/creating-a-wallet.md)
-    * [Creating A Validator](validators/first-time-setup/creating-a-validator.md)
+    * [Creating A Validator创建验证者](validators/first-time-setup/creating-a-validator.md)
   * [AutoNode](validators/autonode.md)
   * [Managing Your Validator管理节点](validators/managing-your-validator/README.md)
     * [Checking Validator Information](validators/managing-your-validator/checking-validator-information.md)
