@@ -1,4 +1,4 @@
-# Validator, BLS key, Instance 验证者，BLS钥匙，机器
+# Validator, BLS key, Instance 验证者，BLS钥匙，实例（服务器）
 
 ## Validator Setup and Configuration
 
@@ -47,7 +47,12 @@ BLS keys are attached to validator via:
 * Creating a new validator \(put commas between multiple BLS keys\)
 * Adding new keys to an existing validator \(edit-validator --add-bls-key\), only one key can be added at a time
 
-## Instance\(s\) & Multi-BLS keys
+验证者可以具有多个密钥进行签名，这意味着验证者正在并行签名块。 BLS密钥通过以下方式附加到验证者的节点上： 
+
+* 创建一个新的验证者（在多个BLS密钥之间放入逗号） 
+* 将新密钥添加到现有验证器（edit-validator --add-bls-key）中，一次只能添加一个密钥
+
+## Instance\(s\) & Multi-BLS keys服务器和Multi-BLS密钥
 
 An instance is a virtual private server or dedicated hardware with a unique IP address on which a validator runs the node software.
 
@@ -67,6 +72,24 @@ Below are some differences to using multiBLS vs. single-key instance:
 * MultiBLS and single-key instance have different staking commands
 * In order to make changes to the keys in a multiBLS instance, the node needs to be stopped and restarted; whereas a single-key instance can be directly added to a validator \(since the node is running on a different instance\)
 * Too many BLS keys signing using a single node creates a single point of failure \(validator’s risk\)
+
+实例是具有专用IP地址的虚拟专用服务器或专用硬件，验证者/程序将在该IP地址上运行节点。 在每个实例中，最多可以有4个BLS密钥给交易签名。如果您的实例中有多个BLS密钥，则意味着您正在使用multiBLS功能。如果实例中有一个BLS密钥，我们将称其为单密钥实例。
+
+以下是一些要遵循的规则： 
+
+* 为了使用multiBLS功能（同一实例中有多个BLS密钥），所有密钥必须位于同一分片上 
+* 每个验证者允许的BLS密钥总数是外部总座位数的1/3（网络级别） 
+
+请注意 有些验证者有时会选择运行重复的实例（2个实例，每个实例使用相同的BLS密钥运行）作为备份机制。 
+
+以下是使用multiBLS与单键实例的一些区别： 
+
+* 在multiBLS实例中，机器成本会更低（比较下图“验证器2”与“验证器1”）
+* 单键实例可以在不同的分片中为验证程序运行节点，而multiBLS实例要求所有BLS密钥都在同一分片中 
+* MultiBLS和单键实例具有不同的质押指令
+* 为了更改multiBLS实例中的键，需要停止并重新启动该节点。而单键实例可以直接添加到验证器中（因为节点在另一个实例上运行） 
+* 每个验证者允许的BLS密钥总数是外部总座位数的1/3（网络级别） 
+* 使用单个节点签名过多的BLS密钥会导致提高节点故障的风险
 
 ## Visualization
 
