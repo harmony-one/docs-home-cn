@@ -64,7 +64,7 @@ In order to choose their validators and manage their delegation, delegators have
 | Status状态 | Election status of validator in current epoch 当前epoch验证者是否当选 |
 | Name姓名 | Validator name验证者姓名 |
 
-![this screen shot is zoomed for demonstration purpose.](../.gitbook/assets/image%20%2824%29.png)
+![this screen shot is zoomed for demonstration purpose.](../.gitbook/assets/image%20%2825%29.png)
 
 | **Validator Profile**验证者资料 | Delegators can delegate on the Validator Profile page and check detailed information of validators.委托人可以在“Validator Profile”页面上进行委托，并检查验证者的详细信息。 |
 | :--- | :--- |

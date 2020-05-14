@@ -60,6 +60,7 @@
     * [Running a Node运行节点](validators/first-time-setup/running-a-node.md)
     * [Creating A Wallet 创建新的钱包](validators/first-time-setup/creating-a-wallet.md)
     * [Creating A Validator创建验证者](validators/first-time-setup/creating-a-validator.md)
+    * [Setup Cheatsheet指令备忘录](validators/first-time-setup/setup-cheatsheet-zhi-ling-bei-wang-lu.md)
   * [AutoNode](validators/autonode.md)
   * [Managing Your Validator管理节点](validators/managing-your-validator/README.md)
     * [Checking Validator Information](validators/managing-your-validator/checking-validator-information.md)
