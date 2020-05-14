@@ -26,7 +26,7 @@ description: 'To launch your Ankr validator node, follow the steps below.'
 
 在接下来出现的众多页面中找到Harmony的公开抵押测试网，点击“Deploy”（部署）。
 
-![](../../.gitbook/assets/image%20%281%29.png)
+![](../../.gitbook/assets/image%20%282%29.png)
 
 The hardware configuration is already set at the optimal system requirements. The platform also recommends a cluster, which is usually the one that has the most freely available resources. In this particular case, the recommended cluster is UK cluster, but another cluster may be recommended depending on your location.硬件配置已设置为最佳系统要求。 该平台还推荐了一个Cluster群集，该群集通常是拥有免费可用资源的群集。 在这种情况下，推荐的群集是UK群集，但是根据您所在的位置，可能会建议另一个群集。建议选择第三个位于美国的服务器，离初始节点更近，同步速度更快。
 
@@ -42,7 +42,7 @@ Next, you need to insert a node name in order to identify and get realtime stats
 
 If you are using the application for the first time, you need to generate a deposit address by clicking Create Unique Address. When the address is generated, click **Deploy Node** to finish the Harmony Open Staking node deployment. 如果您是第一次使用Ankr，则需要通过单击创建唯一地址来生成一个存款地址。 生成地址后，单击“Deploy Node部署节点”以完成节点的部署。
 
-![](../../.gitbook/assets/image%20%2814%29.png)
+![](../../.gitbook/assets/image%20%2815%29.png)
 
 ![](../../.gitbook/assets/image-67.png)
 
@@ -50,7 +50,7 @@ If you are using the application for the first time, you need to generate a depo
 
 Your Harmony node is deploying. Click on the Node to check the details. 您的Harmony节点正在部署。 单击节点以查看详细信息。服务器会自动对接Harmony网络，进行节点创建工作（右侧页面会显示“Deployment in progress”）。等待一段时间（一般为一到两分钟）后，如图所示，在下方“Information”栏，您可以看到您的节点状态（显示“Syncing”为正在同步测试网数据中，“Synced”为已同步），同步时间一般在十分钟左右不等，如果太长时间没有变化，刷新一下页面即可。
 
-![](../../.gitbook/assets/image%20%2833%29.png)
+![](../../.gitbook/assets/image%20%2834%29.png)
 
 ![](../../.gitbook/assets/image-71.png)
 

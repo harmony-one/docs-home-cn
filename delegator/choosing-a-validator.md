@@ -47,7 +47,7 @@ In order to choose their validators and manage their delegation, delegators have
       <td style="text-align:left">Epochs left until undelegation funds will be accessible &#x53D6;&#x6D88;&#x59D4;&#x6258;&#x4EE5;&#x540E;&#x7684;&#x5269;&#x4F59;&#x7ED1;&#x5B9A;&#x65F6;&#x957F;</td>
     </tr>
   </tbody>
-</table>![](../.gitbook/assets/image%20%284%29.png)
+</table>![](../.gitbook/assets/image%20%285%29.png)
 
 | **Validator list验证者名单** | Delegators can access information taken into consideration during delegation on the Validator list at a glance.委托人可以一目了然地访问在验证者列表上进行委托时考虑的信息。 |
 | :--- | :--- |
@@ -64,7 +64,7 @@ In order to choose their validators and manage their delegation, delegators have
 | Status状态 | Election status of validator in current epoch 当前epoch验证者是否当选 |
 | Name姓名 | Validator name验证者姓名 |
 
-![this screen shot is zoomed for demonstration purpose.](../.gitbook/assets/image%20%2830%29.png)
+![this screen shot is zoomed for demonstration purpose.](../.gitbook/assets/image%20%2831%29.png)
 
 | **Validator Profile**验证者资料 | Delegators can delegate on the Validator Profile page and check detailed information of validators.委托人可以在“Validator Profile”页面上进行委托，并检查验证者的详细信息。 |
 | :--- | :--- |
@@ -84,5 +84,5 @@ In order to choose their validators and manage their delegation, delegators have
 | Reward rate history历史回报率 | Expected annual percentage return rate for validator at every epoch在每个Epoch的历史预期年回报率 |
 | Delegators 委托者 | List of accounts that delegated to this validator and delegation amount委托给该验证者的账户名单和委托金额 |
 
-![this screen shot is zoomed for demonstration purpose.](../.gitbook/assets/image%20%288%29.png)
+![this screen shot is zoomed for demonstration purpose.](../.gitbook/assets/image%20%289%29.png)
 
