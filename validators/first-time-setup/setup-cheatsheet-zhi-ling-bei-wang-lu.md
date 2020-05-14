@@ -8,7 +8,7 @@ If you are new to setting up Validators, start [here](). 如果您不熟悉设�
 ssh -i [KEY].pem [SSH ADDRESS]
 ```
 
-![](../../.gitbook/assets/image%20%2812%29.png)
+![](../../.gitbook/assets/image%20%2815%29.png)
 
 2. Install `tmux`, if your Linux distribution does not come with it. 如果您的Linux发行版不附带tmux，请安装tmux。
 

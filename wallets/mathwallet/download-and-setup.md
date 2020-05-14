@@ -18,5 +18,5 @@ Open the extension in your browser and create new password.点击浏览器插件
 
 Select **Harmony** from the list of networks.切换至Harmony网络。
 
-![](../../.gitbook/assets/image%20%2826%29.png)
+![](../../.gitbook/assets/image%20%2829%29.png)
 
