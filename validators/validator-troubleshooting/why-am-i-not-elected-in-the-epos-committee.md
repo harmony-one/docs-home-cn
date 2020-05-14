@@ -82,7 +82,7 @@ Make sure your max-total-delegation is high enough and above the median stake so
 
 #### **Your validator node** epos-eligibility-status **flag needs to be active** 您的验证者节点epos-eligibility-status标志需要处于活动状态
 
-Issue the command  
+Issue the command 发出命令  
 ./hmy -n [https://api.s0.os.hmny.io](https://api.s0.os.hmny.io) blockchain validator information \[VALIDATOR-ACCOUNT\] \| grep epos-status
 
 ```bash
@@ -90,14 +90,14 @@ Issue the command
     "epos-status": "currently elected",
 ```
 
-If **not eligible**, update it to active via the command  
+If **not eligible**, update it to active via the command 如果不符合要求，请通过以下命令将其更新为活动状态  
 ./hmy -n [https://api.s0.os.hmny.io](https://api.s0.os.hmny.io) staking edit-validator --validator-addr &lt;ONE\_VALIDATOR\_ACCOUNT&gt; --active true --passphrase
 
 ```bash
 ./hmy --node="https://api.s0.t.hmny.io" staking edit-validator --validator-addr one1u6c4wer2dkm767hmjeehnwu6tqqur62gx9vqsd --active true --passphrase
 ```
 
-**Finally check your signed blocked**
+**Finally check your signed blocked** 最后检查您的签名 
 
 using the command  
 ./hmy -n [https://api.s0.os.hmny.io](https://api.s0.os.hmny.io) blockchain validator information &lt;ONE\_VALIDATOR\_ACCOUNT&gt;
@@ -119,15 +119,15 @@ and search for:
     },
 ```
 
-For your validator to stay elected, you wanna make sure the current-epoch-signing-percentage is above 66% \(0.66\).
+For your validator to stay elected, you wanna make sure the current-epoch-signing-percentage is above 66% \(0.66\). 为了使您的验证者能够继续当选，您需要确保当前epoch签名率高于66％（0.66）。 
 
-To fix the above, we have to make sure the node is working correctly and below are few pointers
+To fix the above, we have to make sure the node is working correctly and below are few pointers 要解决以上问题，我们必须确保节点正常工作，下面是一些参考
 
-### Your node needs to be functional
+### Your node needs to be functional 您的节点必须正常运行
 
-#### Fully synced node
+#### Fully synced node 完全同步的节点
 
-Compare your block height
+Compare your block height 比较你的区块高度
 
 ```bash
  ./hmy blockchain latest-headers | grep block-number
@@ -136,29 +136,31 @@ Compare your block height
 {% hint style="danger" %}
 If the above doesn’t work and you have an error message similar to this: _commit: v304-0e26945, error: dial tcp4 127.0.0.1:9500: connect: connection refused_  
 It means the harmony node binary is not running. Please follow this documentation on [how to run the node](https://docs.harmony.one/validators/validator/first-time-setup/download-node-script).
+
+如果以上操作均无效，并且您收到以下错误消息：提交：v304-0e26945，错误：拨打tcp4 127.0.0.1:9500：connect：连接被拒绝 这意味着和谐节点二进制文件未运行。请遵循此文档以了解如何运行节点。
 {% endhint %}
 
-and the network block height
+and the network block height 和网络块高度进行对比
 
 ```bash
 ./hmy --node="https://api.s0.t.hmny.io" blockchain latest-headers | grep blockNumber
 ```
 
-Make sure network height and your current height are very close or equal. Also, for non shard 0 node, you need 2 DBs to be synced, your non-shard 0 and the shard 0.
+Make sure network height and your current height are very close or equal. Also, for non shard 0 node, you need 2 DBs to be synced, your non-shard 0 and the shard 0. 确保网络高度与您当前的区块高度非常接近或相等。此外，对于非分片0节点，您需要同步2个DB，即分片0和你节点所在的分片。
 
 {% hint style="info" %}
-the above command is for network height on shard 0, change s0 to s1, s2, .. to match yours in the api URL
+the above command is for network height on shard 0, change s0 to s1, s2, .. to match yours in the api URL 上面的命令用于分片0上的网络高度，将s0更改为s1，s2，..以在api URL中匹配您的分片
 {% endhint %}
 
-When you are fully synced and your validator profile is satisfactory you should start having BINGOs in your validator log file at **epoch change**.
+When you are fully synced and your validator profile is satisfactory you should start having BINGOs in your validator log file at **epoch change**. 当您完全同步并且验证者的设置完成，应在epoch更改时你的log里应该已经开始产生BINGO
 
-You can check BINGOs via this command
+You can check BINGOs via this command 您可以通过此命令检查BINGO
 
 ```bash
 tail -f latest/zero*.log | grep BINGO
 ```
 
-And you’ll notice in your validator information that you started signing blocks
+And you’ll notice in your validator information that you started signing blocks 你的验证者应该已经开始对区块进行签名
 
 ```bash
     "current-epoch-performance": {
@@ -171,5 +173,5 @@ And you’ll notice in your validator information that you started signing block
     },
 ```
 
-**If you fail** to sign blocks, verify your machine/vps doesn't have CPU/memory/hard disk/internet issues. When you fail to sign more than 66% of the blocks in an epoch, you’ll be kicked out from the committee
+**If you fail** to sign blocks, verify your machine/vps doesn't have CPU/memory/hard disk/internet issues. When you fail to sign more than 66% of the blocks in an epoch, you’ll be kicked out from the committee 如果您无法签署块，请确认您的机器/ vps没有CPU /内存/硬盘/互联网问题。如果您在某个时期内未签署超过66％的区块，您将被踢出委员会
 
