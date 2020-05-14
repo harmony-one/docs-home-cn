@@ -47,7 +47,9 @@ In order to choose their validators and manage their delegation, delegators have
       <td style="text-align:left">Epochs left until undelegation funds will be accessible &#x53D6;&#x6D88;&#x59D4;&#x6258;&#x4EE5;&#x540E;&#x7684;&#x5269;&#x4F59;&#x7ED1;&#x5B9A;&#x65F6;&#x957F;</td>
     </tr>
   </tbody>
-</table>| **Validator list** | Delegators can access information taken into consideration during delegation on the Validator list at a glance.Delegated |
+</table>![](../.gitbook/assets/image%20%282%29.png)
+
+| **Validator list** | Delegators can access information taken into consideration during delegation on the Validator list at a glance.Delegated |
 | :--- | :--- |
 | Total ONE delegated to this validator 总得票数 | Total ONE delegated to this validator |
 | Self stake 自抵押票数 | Amount of ONE staked by validator |
@@ -65,7 +67,7 @@ In order to choose their validators and manage their delegation, delegators have
 | Reward rate history | Expected annual percentage return rate for validator at every epoch |
 | Delegators | List of accounts that delegated to this validator and delegation amount |
 
-![this screen shot of the Validator page is zoomed for demonstration purpose.](../.gitbook/assets/image%20%2823%29.png)
+![this screen shot is zoomed for demonstration purpose.](../.gitbook/assets/image%20%2824%29.png)
 
 | **Validator Profile**验证者资料 | Delegators can delegate on the Validator Profile page and check detailed information of validators.委托人可以在“Validator Profile”页面上进行委托，并检查验证者的详细信息。 |
 | :--- | :--- |
@@ -85,5 +87,5 @@ In order to choose their validators and manage their delegation, delegators have
 | Reward rate history历史回报率 | Expected annual percentage return rate for validator at every epoch在每个Epoch的历史预期年回报率 |
 | Delegators 委托者 | List of accounts that delegated to this validator and delegation amount委托给该验证者的账户名单和委托金额 |
 
-![this screen shot of the Validator page is zoomed for demonstration purpose.](../.gitbook/assets/image%20%284%29.png)
+![this screen shot is zoomed for demonstration purpose.](../.gitbook/assets/image%20%285%29.png)
 
