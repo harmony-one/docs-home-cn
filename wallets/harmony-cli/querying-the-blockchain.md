@@ -138,8 +138,8 @@ Checking the network status, last block, epoch, leaders, based on the shard numb
 
 {% tabs %}
 {% tab title="Shard 0" %}
-```bash
-./hmy blockchain latest-header --node="https://api.s0.t.hmny.io"
+```text
+./hmy blockchain latest-header --node=https://api.s0.t.hmny.io
 
 {
   "id": "0",
@@ -161,8 +161,8 @@ Checking the network status, last block, epoch, leaders, based on the shard numb
 {% endtab %}
 
 {% tab title="Shard 1" %}
-```bash
-./hmy blockchain latest-header --node="https://api.s1.t.hmny.io"
+```text
+./hmy blockchain latest-header --node=https://api.s1.t.hmny.io
 
 {
   "id": "0",
@@ -184,8 +184,8 @@ Checking the network status, last block, epoch, leaders, based on the shard numb
 {% endtab %}
 
 {% tab title="Shard 2" %}
-```bash
-./hmy blockchain latest-header --node="https://api.s2.t.hmny.io"
+```text
+./hmy blockchain latest-header --node=https://api.s2.t.hmny.io
 
 {
   "id": "0",
@@ -207,8 +207,8 @@ Checking the network status, last block, epoch, leaders, based on the shard numb
 {% endtab %}
 
 {% tab title="Shard 3" %}
-```bash
-./hmy blockchain latest-header --node="https://api.s3.t.hmny.io"
+```text
+./hmy blockchain latest-header --node=https://api.s3.t.hmny.io
 
 {
   "id": "0",
@@ -243,19 +243,19 @@ For example if you call latest-header and get a result of `10657` you convert th
 #### Using the Binary:
 
 ```bash
-./hmy --node="https://api.s0.t.hmny.io" blockchain block-by-number <block-number>
+./hmy --node="https://api.s0.os.hmny.io" blockchain block-by-number <block-number>
 ```
 
 #### Using the Shell Wrapper:
 
 ```bash
-./hmy.sh --node="https://api.s0.t.hmny.io" blockchain block-by-number <block-number>
+./hmy.sh --node="https://api.s0.os.hmny.io" blockchain block-by-number <block-number>
 ```
 
 #### Example:
 
-```bash
-./hmy --node="https://api.s0.t.hmny.io" blockchain block-by-number 0x29A1
+```text
+./hmy --node=https://api.s0.os.hmny.io blockchain block-by-number 0x29A1
 
 {
   "id": "0",
