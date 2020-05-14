@@ -20,15 +20,11 @@ For installing Rclone, please follow the instructions at [https://rclone.org](ht
 
 ## 2. Configuring Rclone 配置Rclone <a id="2-configuring-rclone"></a>
 
-‌
-
 To check the location of the `rclone.conf`file run: 要检查rclone.conf文件的位置，请运行：
 
 ```text
 rclone config file
 ```
-
-‌
 
 The `rclone.conf` file is usually located at `~/.config/rclone/rclone.conf` . Now edit the file and add the information below: rclone.conf文件通常位于〜/ .config / rclone / rclone.conf中。现在编辑文件并添加以下信息：
 
@@ -36,11 +32,7 @@ The `rclone.conf` file is usually located at `~/.config/rclone/rclone.conf` . No
 [mainnet]type = s3provider = AWSenv_auth = falseregion = us-west-1acl = public-readserver_side_encryption = AES256storage_class = REDUCED_REDUNDANCY
 ```
 
-‌
-
 ## 3. Running Rclone 运行Rclone <a id="3-running-rclone"></a>
-
-‌
 
 Below is the command to sync the shard you want. Replace `<ShardID>`with the shard number you want to sync. 以下是同步所需分片的命令。将替换为要同步的分片号。
 
