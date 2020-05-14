@@ -49,23 +49,20 @@ In order to choose their validators and manage their delegation, delegators have
   </tbody>
 </table>![](../.gitbook/assets/image%20%282%29.png)
 
-| **Validator list** | Delegators can access information taken into consideration during delegation on the Validator list at a glance.Delegated |
+| **Validator list验证者名单** | Delegators can access information taken into consideration during delegation on the Validator list at a glance.委托人可以一目了然地访问在验证者列表上进行委托时考虑的信息。 |
 | :--- | :--- |
-| Total ONE delegated to this validator 总得票数 | Total ONE delegated to this validator |
-| Self stake 自抵押票数 | Amount of ONE staked by validator |
-| Max delegation最大可代理票数 | Maximum ONE stake allowed by the validator, including self-stake |
-| Validator since | Block number at which validator registered |
-| Commission \(rename to fee for consistency\) | Commission on rewards charged by validator |
-| Max daily change | daily change in commission allowed for this validator |
-| Uptime \(AVG\) | Signing percentage for this validator's nodes |
-| Slots | Number of seats \(bls keys\) associated with the Validator |
-| Elected slots | Number of seats \(bls keys\) elected in the current committee |
-| Expected return | Expected annual return rate |
-| Lifetime rewards | all rewards collected by the validator |
-| Shards | Shards in which validator's BLS keys belong, shown order is based on time to add |
-| Stake & delegation history | Stake and delegation amount for the validator at every epoch |
-| Reward rate history | Expected annual percentage return rate for validator at every epoch |
-| Delegators | List of accounts that delegated to this validator and delegation amount |
+| Effective Median Stake有效中位质押 | Median of ONE staked among the top elected slots当选节点质押量的中位数 |
+| Total Stake总质押 | Total ONE staked in the Harmony network 验证者的质押总量 |
+| Current block height当前区块高度 | current block height of Harmony blockchain区块链的当前高度 |
+| All所有 | All validators created & listed onchain链上所有的验证者 |
+| Elected当选 | Validator currently selected & eligible to sign blocks & earn rewards验证者当选，有资格签名并获得奖励 |
+| Not Elected未当选 | Validator currently not-selected to sign blocks due to low stake or insufficient uptime验证者由于签名不足或质押不足未当选 |
+| Expected return七日年化 | Expected annual return rate预期年回报率 |
+| Stake质押 | Total ONE staked by the validator |
+| Fees佣金 | Commission on rewards charged by validator 验证人收取的酬金委员会 |
+| Uptime \(AVG\)平均正常运行时间 | Signing percentage for this validator's nodes 该验证者节点的签名百分比 |
+| Status状态 | Election status of validator in current epoch 当前epoch验证者是否当选 |
+| Name姓名 | Validator name验证者姓名 |
 
 ![this screen shot is zoomed for demonstration purpose.](../.gitbook/assets/image%20%2824%29.png)
 
