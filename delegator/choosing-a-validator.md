@@ -65,7 +65,7 @@ In order to choose their validators and manage their delegation, delegators have
 | Reward rate history | Expected annual percentage return rate for validator at every epoch |
 | Delegators | List of accounts that delegated to this validator and delegation amount |
 
-![this screen shot of the Validator page is zoomed for demostration purpose.](../.gitbook/assets/image%20%2823%29.png)
+![this screen shot of the Validator page is zoomed for demonstration purpose.](../.gitbook/assets/image%20%2823%29.png)
 
 | **Validator Profile**验证者资料 | Delegators can delegate on the Validator Profile page and check detailed information of validators.委托人可以在“Validator Profile”页面上进行委托，并检查验证者的详细信息。 |
 | :--- | :--- |
@@ -85,5 +85,5 @@ In order to choose their validators and manage their delegation, delegators have
 | Reward rate history历史回报率 | Expected annual percentage return rate for validator at every epoch在每个Epoch的历史预期年回报率 |
 | Delegators 委托者 | List of accounts that delegated to this validator and delegation amount委托给该验证者的账户名单和委托金额 |
 
-![](../.gitbook/assets/image%20%284%29.png)
+![this screen shot of the Validator page is zoomed for demonstration purpose.](../.gitbook/assets/image%20%284%29.png)
 
