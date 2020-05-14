@@ -6,23 +6,17 @@ description: 'To launch your Ankr validator node, follow the steps below.'
 
 ## Deploying a Harmony Node on Ankr 部署Ankr节点
 
-1. Head to [app.ankr.com](http://app.ankr.com/) to deploy and select **Deploy A Node**
-
-**Step1：**
-
 注册一个Ankr账户。
 
 网址：[https://app.ankr.com/](https://app.ankr.com/)
 
 备注：您可以使用QQ邮箱、谷歌邮箱等进行注册。
 
-**Step2：**
+
 
 注册成功并拥邮箱进行验证后，可进入首页，点击“Project”下方的“Deploy a Node”（部署一个节点
 
 ![](../../.gitbook/assets/image-92.png)
-
-**Step3：**
 
 在接下来出现的众多页面中找到Harmony的公开抵押测试网，点击“Deploy”（部署）。
 
