@@ -1,32 +1,45 @@
 ---
 description: >-
   This document is to share a list of steps to help troubleshoot why your
-  validator node is not elected in the EPOS committee.
+  validator node is not elected in the EPOS
+  committee.本文档会帮助解决您的验证者节点为什么未在EPOS委员会中被选举。
 ---
 
-# Why am I not elected in the EPOS Committee 为什么我的节点没有被选中
+# Why am I not elected in the EPOS Committee 为什么我的节点没有被选中 \(待更新）
 
-## EPOS medium document
+## EPOS medium document EPOS简介
 
 [https://harmony.one/epos](https://harmony.one/epos)
 
-## **Now let’s get into action.**
+## **Now let’s get into action.让我们来开始吧**
 
-Non election in the EPOS committee are caused by two main issues :
+Non election in the EPOS committee are caused by two main issues 你的节点没有被选中主要是有两个原因造成的:
 
-1. Your validator profile needs to have satisfactory conditions
-   1. current total stake has to be among the 320 highest stake before the change of next epoch
+1. Your validator profile needs to have satisfactory conditions 
+   1. stake has to be among the 320 highest stake before the change of next epoch
    2. Active flag needs to be true
    3. The numbers of block signed per epoch needs to be above 66%
 2. Your node needs to be functional
+
    1. Fully synced
    2. Signing blocks
 
+1。你的验证者节点必须满足一下条件：
+
+1. 单个钥匙的质押量必须在下一个epoch之前排名前320个
+2. 活动标志必须为真 
+3. 每个epoch的签名百分比必须高于66％
+
+2。 您的节点必须正常运行:
+
+1. 完全同步
+2. 在签名
+
 ## **Validator profile need to satisfy the below**
 
-### Bidding for a place in the EPOS committee
+### Bidding for a place in the EPOS committee 在EPOS委员会中竞标
 
-#### Verify the median stake
+#### Verify the median stake验证中位数
 
 {% tabs %}
 {% tab title="CLI" %}
@@ -44,10 +57,10 @@ go to : [https://staking.harmony.one/validators](https://staking.harmony.one/val
 {% endtabs %}
 
 {% hint style="success" %}
-the CLI returned a value in wei, it can be converted online converter like [https://eth-converter.com/](https://eth-converter.com/)
+the CLI returned a value in wei, it can be converted online converter like [https://eth-converter.com/](https://eth-converter.com/) CLI在wei中返回了一个值，可以将其转换为在线转换器，例如[https://eth-converter.com/](https://eth-converter.com/)
 {% endhint %}
 
-#### Total delegation is above the median stake
+#### Total delegation is above the median stake 总质押高于中位数
 
 Visit [https://staking.harmony.one/validators/](https://staking.harmony.one/validators/)&lt;youroneaccount&gt;
 
@@ -61,11 +74,13 @@ Being just above the last bidder would ensure your a place but it is risky as yo
 
 If you are not above the median stake then time to ask for more delegation or delegate yourself more ONE token following this doc on [how to delegate more ONE token](https://docs.harmony.one/validators/validator/managing-your-validator/delegating-to-a-validator)
 
+在更改下一个epoch之前，您当前的总质押必须排名在320名最高赌注中。为此，确保这一点的一种方法是接近/高于中位数。 刚好高于最后一位竞标者可以确保您获得席位，但是这样做很冒险。 如果您还没有超过中位数赌注，那么该文档之后将有时间要求更多的委托或给自己委托更多的ONE令牌，有关如何委托更多的ONE令牌 确
+
 {% hint style="info" %}
-Make sure your max-total-delegation is high enough and above the median stake so your added delegation work
+Make sure your max-total-delegation is high enough and above the median stake so your added delegation work 确保您的最大委托总额足够高并且高于中位数
 {% endhint %}
 
-#### **Your validator node** epos-eligibility-status **flag needs to be active**
+#### **Your validator node** epos-eligibility-status **flag needs to be active** 您的验证者节点epos-eligibility-status标志需要处于活动状态
 
 Issue the command  
 ./hmy -n [https://api.s0.os.hmny.io](https://api.s0.os.hmny.io) blockchain validator information \[VALIDATOR-ACCOUNT\] \| grep epos-status

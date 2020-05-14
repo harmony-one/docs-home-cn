@@ -31,7 +31,7 @@ The CLI will prompt your for the passphrase of the delegation account.
 
 `--delegator-addr` is the account to collect rewards for
 
-CLI将提示您输入委派帐户的密码。 --delegator-addr是用于收集奖励的帐户 
+CLI将提示您输入委派帐户的密码。 --delegator-addr是用于收集奖励的帐户
 
 {% hint style="warning" %}
 You can only collect ALL of your block rewards at once, not partially. 您只能一次性收集全部块奖励
