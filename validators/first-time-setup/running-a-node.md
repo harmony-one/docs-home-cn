@@ -2,66 +2,56 @@
 description: Using node.sh
 ---
 
-# Running a Node
+# Running a Node运行节点
 
-## Download node.sh
+## Download node.sh下载node.sh <a id="download-node-sh"></a>
 
-**1.** Run the following command to download the node.sh script:
+‌
 
-```bash
-curl -LO https://raw.githubusercontent.com/harmony-one/harmony/master/scripts/node.sh \
-&& chmod a+x node.sh
+Run the following command to download the node.sh script:运行以下命令以下载node.sh脚本：
+
+```text
+curl -LO https://raw.githubusercontent.com/harmony-one/harmony/master/scripts/node.sh \&& chmod a+x node.sh‌
 ```
 
-## TMUX
+## TMUX <a id="tmux"></a>
 
 Install tmux if your Linux distribution does not already come with it.
 
-{% tabs %}
-{% tab title="Ubuntu LTS" %}
-```bash
+请安装tmux，如果你的Linux机器里还没有tmux的话。
+
+```text
 sudo apt-get install tmux
 ```
-{% endtab %}
 
-{% tab title="Amazon Linux" %}
-```bash
-sudo yum install tmux
-```
-{% endtab %}
-{% endtabs %}
+## Run Node运行节点  <a id="run-node"></a>
 
-## Run Node
+**1.** Create a new tmux session called "node". 创建一个名为“ node”的新tmux会话。
 
-**1.** Create a new tmux session called "node".
-
-```bash
+```text
 tmux new-session -s node
 ```
 
-{% hint style="info" %}
 You'll want to use a tmux session in order to leave your node running, while you are not connected to your instance.
-{% endhint %}
 
-{% hint style="danger" %}
 For any Debian based OS like Ubuntu and others, please install the package below in case you are NOT running statically linked binaries via parameter `-I`:
 
-```bash
+在不连接到实例的情况下，您将需要使用tmux会话来使节点保持运行状态。
+
+对于任何基于Debian的操作系统，如Ubuntu和其他操作系统，请安装以下软件包:
+
+```text
 sudo apt-get install libgmp-dev
 ```
-{% endhint %}
 
 **2.** Run the node.sh script with the following command. Once you do, it will ask for a passphrase for your BLS key file. Type your passphrase on the screen that follows and your node should be up and running.
 
-{% tabs %}
-{% tab title="Open Staking Network" %}
-```bash
+使用以下命令运行node.sh脚本。完成后，它将要求为您的BLS密钥文件输入密码。在随后的屏幕上键入密码，您的节点应该已启动并正在运行。
+
+```text
 ./node.sh -S -c -z -I -N staking -k [BLS KEY FILE].key
 ```
-{% endtab %}
-{% endtabs %}
 
-{% hint style="info" %}
 Use `-S` to run node.sh as any user.
 
 Use `-c` to automatically clear old data for a refreshed network.
@@ -75,91 +65,94 @@ Use `-N [NETWORK]` to specify which network to connect to.
 Use `-k [BLS KEY FILE]` to specify which BLS key to run the node with.
 
 For the complete list of parameters use `./node.sh --help`
-{% endhint %}
 
-{% hint style="danger" %}
-Only use `-c` for our testing networks. Do not use for Mainnet.
-{% endhint %}
+Only use `-c` for our testing networks. Do not use for Mainnet.‌
 
-**3.** Detach your "node" tmux session by press \[**Ctrl\]+b**, releasing and and then press **d**. Detaching from your session will allow you to safely disconnect from your instance, while leaving your node running in the cloud.
+使用-S以任何用户身份运行node.sh。
 
-**4.** To check if your node is syncing properly, run the below command and check that the block height is greater than 0.
+使用-c自动清除用于旧数据以刷新网络。
 
-```bash
+使用-z在启用质押的情况下运行。
+
+使用-I与静态链接的二进制文件一起运行。
+
+使用-N \[NETWORK\]指定要连接到的网络。
+
+使用-k \[BLS KEY FILE\]指定运行该节点的BLS密钥。
+
+获取有关参数的完整列表，请使用./node.sh --help
+
+仅将-c用于我们的测试网络。请勿用于主网。
+
+**3.** Detach your "node" tmux session by press \[**Ctrl\]+b**, releasing and and then press **d**. Detaching from your session will allow you to safely disconnect from your instance, while leaving your node running in the cloud.‌
+
+同时按\[Ctrl\] + b然后按d，退出“节点” tmux会话。从tmux中分离将使您可以安全地与实例断开连接，同时使节点在云中运行。
+
+**4.** To check if your node is syncing properly, run the below command and check that the block height is greater than 0.要检查您的节点是否正确同步，请运行以下命令，并检查块高度是否大于0。
+
+```text
 ./hmy blockchain latest-headers
 ```
 
 {% hint style="success" %}
-Harmony relies on a beacon shard chain \(aka shard 0\) to facilitate cross shard transaction. For the node to be fully working both your non shard 0 and shard 0 needs to be fully synced
+Harmony依靠信标链（也称为分片0）来促进跨分片交易。为了使节点正常工作，您的非分片0和分片0都需要完全同步
 {% endhint %}
 
-**5.** Confirm that you are fully synced before continuing. Issue the command in the format **./hmy --node= "\[SHARD\_RPC\_ENDPOINT\]" blockchain latest-headers**, where  
-SHARD\_RCP\_ENDPOINT would be having that format : api.s\[Shard \#\].\[NETWORK\].hmny.io  
-ex :
+**5.** Confirm that you are fully synced before continuing. Issue the command in the format **./hmy --node= "\[SHARD\_RPC\_ENDPOINT\]" blockchain latest-headers**, where SHARD\_RCP\_ENDPOINT would be having that format : api.s\[Shard \#\].\[NETWORK\].hmny.io ex : 
 
-{% tabs %}
-{% tab title="Open Staking Network S0" %}
-```bash
-./hmy --node="https://api.s0.os.hmny.io" blockchain latest-headers
+确认您已完全同步，然后再继续。以**./hmy --node= "\[SHARD\_RPC\_ENDPOINT\]" blockchain latest-headers**的格式发出命令，其中 SHARD\_RCP\_ENDPOINT将采用以下格式：api.s \[Shard＃\]。\[NETWORK\] .hmny.io 例如：
+
+```text
+./hmy --node="https://api.s0.t.hmny.io" blockchain latest-headers‌
 ```
-{% endtab %}
 
-{% tab title="Open Staking Network S1" %}
-```bash
-./hmy --node="https://api.s1.os.hmny.io" blockchain latest-headers
-```
-{% endtab %}
-{% endtabs %}
+**6.** And verity the blocks shown in step 4 and 5 are closed or equals to each other‌ 并且验证步骤4和5中所示的区块是否一致
 
-**6.** And verity the blocks shown in step 4 and 5 are closed or equals to each other
+## Multiple BLS Keys \(Optional and recommended for advanced users\)多个BLS密钥共用机器（可选，建议高级用户使用） <a id="multiple-bls-keys-optional-and-recommended-for-advanced-users"></a>
 
-## Multiple BLS Keys \(Optional and recommended for advanced users\)
+Optionally, you can run the node using multiple BLS keys if you want.‌您可以根据需要使用多个BLS密钥运行节点。
 
-Optionally, you can run the node using multiple BLS keys if you want.
+**1.** Keys are loaded from `.hmy/blskeys` folder which has to be created first: 1.首先创建.hmy / blskeys 从该文件夹中加载密钥：
 
-**1.** Keys are loaded from `.hmy/blskeys` folder which has to be created first:
-
-```bash
+```text
 mkdir -p .hmy/blskeys
 ```
 
-**2.** Copy all the [previously created BLS key\(s\)](https://docs.harmony.one/home/validators/first-time-setup/generating-a-bls-key) to this new folder:
+**2.** Copy all the [previously created BLS key\(s\)](https://docs.harmony.one/home/validators/first-time-setup/generating-a-bls-key) to this new folder将所有先前创建的BLS密钥复制到此新文件夹中：:
 
-```bash
+```text
 cp *.key .hmy/blskeys
 ```
 
-{% hint style="warning" %}
-Make sure all your BLS keys belong to the same shard when using multiple BLS keys. You can use the command below to check each one of them.
-{% endhint %}
+Make sure all your BLS keys belong to the same shard when using multiple BLS keys. You can use the command below to check each one of them.使用多个BLS密钥时，请确保所有BLS密钥都属于同一分片。您可以使用下面的命令来检查每个。
 
-{% tabs %}
-{% tab title="Open Staking Network" %}
-```bash
-./hmy --node="https://api.s0.os.hmny.io" utility shard-for-bls [BLS PUBLIC KEY]
+```text
+./hmy --node="https://api.s0.t.hmny.io" utility shard-for-bls [BLS PUBLIC KEY]
 ```
-{% endtab %}
-{% endtabs %}
 
 **3.** For each BLS key file, a corresponding `<blskey>.pass` file needs to be created inside folder`.hmy/blskeys`with the passphrase inside it.
 
-{% hint style="warning" %}
-For any `.key` if no passphrase file is available, it will use the default specified when running the node e.g., `./node.sh -p blspass.txt`
-{% endhint %}
+For any `.key` if no passphrase file is available, it will use the default specified when running the node e.g., `./node.sh -p blspass.txt`‌
 
-**4.** You can now run the node using parameter **-M** for multiple BLS keys. Parameter **-k** will not be used anymore as we are loading multiple BLS keys here:
+对于每个BLS密钥文件，需要在folder.hmy / blskeys内部创建一个相应的 .pass文件，并在其中使用密码短语。
 
-```bash
+对于任何.key如果没有可用的密码短语文件，它将使用运行节点时指定的默认值，例如./node.sh -p blspass.txt
+
+**4.** You can now run the node using parameter **-M** for multiple BLS keys. Parameter **-k** will not be used anymore as we are loading multiple BLS keys here现在，您可以对多个BLS密钥使用参数-M运行该节点。由于将在此处加载多个BLS密钥，因此不再使用参数-k：:
+
+```text
 ./node.sh -S -c -z -I -N staking -M
 ```
 
-## Helpful Information
+## Helpful Information有用的信息 <a id="helpful-information"></a>
 
-To re-attach to your tmux session where your `node.sh` is running, use the following command:
+To re-attach to your tmux session where your `node.sh` is running, use the following command: 要重新连接到node.sh的tmux会话，请使用以下命令：
 
-```bash
+```text
 tmux attach-session -t node
 ```
 
-[TMUX Cheatsheet](https://gist.github.com/henrik/1967800)
+‌
+
+​[TMUX Cheatsheet](https://gist.github.com/henrik/1967800)​
 

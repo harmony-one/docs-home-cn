@@ -57,7 +57,7 @@
     * [HMY CLI Download Harmony CLI 下载](validators/first-time-setup/hmy-cli-download-1.md)
     * [Generating A BLS Key创建一个新的BLS密钥](validators/first-time-setup/generating-a-bls-key.md)
     * [Syncing with Rclone使用Rclone进行同步](validators/first-time-setup/using-rclone.md)
-    * [Running a Node](validators/first-time-setup/running-a-node.md)
+    * [Running a Node运行节点](validators/first-time-setup/running-a-node.md)
     * [Creating A Wallet](validators/first-time-setup/creating-a-wallet.md)
     * [Creating A Validator](validators/first-time-setup/creating-a-validator.md)
   * [AutoNode](validators/autonode.md)
