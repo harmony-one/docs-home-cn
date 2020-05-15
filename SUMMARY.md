@@ -40,7 +40,7 @@
   * [Undelegation取消委托](delegator/undelegation.md)
 * [Validators 验证者指南](validators/README.md)
   * [Terms & Concepts 概念](validators/definitions/README.md)
-    * [Validator, BLS key, Instance 验证者，BLS钥匙，实例（服务器）](validators/definitions/validator-keys-and-bids/README.md)
+    * [Validator, BLS key, Instance 验证者节点，BLS钥匙，实例（服务器）](validators/definitions/validator-keys-and-bids/README.md)
       * [Shard Assignment分片分配](validators/definitions/validator-keys-and-bids/shard-assignment.md)
     * [Slots Bidding and Election席位竞标与选拔](validators/definitions/slots-bidding-and-election.md)
     * [Effective Proof-of-Stake 有效质押](validators/definitions/effective-proof-of-stake-bidding-process.md)

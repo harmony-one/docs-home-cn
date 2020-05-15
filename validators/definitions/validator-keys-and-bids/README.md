@@ -1,4 +1,4 @@
-# Validator, BLS key, Instance 验证者，BLS钥匙，实例（服务器）
+# Validator, BLS key, Instance 验证者节点，BLS钥匙，实例（服务器）
 
 ## Validator Setup and Configuration
 
