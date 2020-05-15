@@ -33,7 +33,7 @@
     * [Create/import account](wallets/safepal/create-import-account.md)
     * [Send transaction](wallets/safepal/send-transaction.md)
 * [Delegators 委托者指南](delegator/README.md)
-  * [Staking Dashboard抵押Dashboard](delegator/staking-dashboard/README.md)
+  * [Staking Dashboard](delegator/staking-dashboard/README.md)
     * [Sending transactions 使用Staking Dashboard转账](delegator/staking-dashboard/untitled.md)
     * [Staking Transactions 使用Staking Dashboard质押](delegator/staking-dashboard/untitled-1.md)
   * [Choosing a Validator选择你的验证者](delegator/choosing-a-validator.md)

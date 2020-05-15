@@ -1,4 +1,4 @@
-# Staking Transactions via Math Wallet麦子钱包委托
+# Staking Transactions via Math Wallet麦子钱包质押交易
 
 Sign in from the staking dashboard [https://staking.harmony.one/validators 1](https://staking.harmony.one/validators) for staking transactions.从staking dashboard [https://staking.harmony.one/validators](https://staking.harmony.one/validators) 登录来进行质押。
 
