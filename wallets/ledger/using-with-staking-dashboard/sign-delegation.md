@@ -1,4 +1,4 @@
-# Staking Transactions via Ledger使用Ledger质押
+# Staking Transactions via Ledger使用Ledger委托
 
 Check the validators page to see list of validators. Click on desired validator logo to check validator details. 在Validator页面上检查验证者的信息。 单击验证者徽标以检查验证者详细信息。
 
